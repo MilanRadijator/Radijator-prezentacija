@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radijator Inzenjering | Dokument pregleda prezentacije 2026</title>
+    <style>
+      :root {
+        --coal: #080706;
+        --graphite: #171412;
+        --paper: #f4efe6;
+        --white: #ffffff;
+        --red: #d92722;
+        --muted: #6f665e;
+        --line: rgba(23, 20, 18, 0.14);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--graphite);
+        font-family: Arial, Helvetica, sans-serif;
+        background:
+          radial-gradient(circle at 14% 0, rgba(217, 39, 34, 0.18), transparent 24rem),
+          linear-gradient(135deg, #302722, #b9afa1);
+      }
+
+      .document {
+        width: min(1040px, calc(100% - 32px));
+        margin: 24px auto;
+        overflow: hidden;
+        border-radius: 28px;
+        background: var(--paper);
+        box-shadow: 0 28px 90px rgba(0, 0, 0, 0.26);
+      }
+
+      header {
+        display: grid;
+        gap: 28px;
+        padding: 42px;
+        color: var(--white);
+        background:
+          radial-gradient(circle at 82% 0, rgba(217, 39, 34, 0.42), transparent 22rem),
+          linear-gradient(135deg, var(--coal), #2a0d0b);
+      }
+
+      header img {
+        width: min(300px, 68vw);
+        padding: 12px 16px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.96);
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        line-height: 1;
+      }
+
+      h1 {
+        max-width: 780px;
+        font-size: clamp(42px, 8vw, 86px);
+        text-transform: uppercase;
+        letter-spacing: -0.06em;
+      }
+
+      h2 {
+        margin-bottom: 18px;
+        font-size: 34px;
+        text-transform: uppercase;
+        letter-spacing: -0.04em;
+      }
+
+      h3 {
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .meta span,
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        min-height: 32px;
+        padding: 8px 12px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 999px;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      main {
+        display: grid;
+        gap: 28px;
+        padding: 42px;
+      }
+
+      section {
+        padding: 28px;
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.46);
+      }
+
+      .facts {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+
+      .facts article {
+        padding: 18px;
+        border-radius: 18px;
+        color: var(--white);
+        background: linear-gradient(135deg, var(--coal), #33241f);
+      }
+
+      .facts strong {
+        display: block;
+        color: #ff4b45;
+        font-size: 26px;
+      }
+
+      .facts span {
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
+        border-radius: 18px;
+        background: var(--white);
+      }
+
+      th,
+      td {
+        padding: 12px 14px;
+        border-bottom: 1px solid var(--line);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        color: var(--white);
+        background: var(--coal);
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      td:first-child {
+        width: 64px;
+        color: var(--red);
+        font-weight: 900;
+      }
+
+      ul {
+        display: grid;
+        gap: 8px;
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      li {
+        line-height: 1.55;
+      }
+
+      .actions {
+        position: sticky;
+        top: 16px;
+        z-index: 5;
+        display: flex;
+        justify-content: flex-end;
+        padding: 16px;
+      }
+
+      .actions button {
+        min-height: 42px;
+        padding: 0 18px;
+        border: 0;
+        border-radius: 999px;
+        color: var(--white);
+        background: var(--red);
+        font-weight: 900;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .note {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @page {
+        size: A4;
+        margin: 14mm;
+      }
+
+      @media (max-width: 760px) {
+        .document {
+          width: 100%;
+          margin: 0;
+          border-radius: 0;
+        }
+
+        header,
+        main {
+          padding: 24px;
+        }
+
+        .facts {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media print {
+        body {
+          background: var(--white);
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+        }
+
+        .document {
+          width: 100%;
+          margin: 0;
+          border-radius: 0;
+          box-shadow: none;
+        }
+
+        .actions {
+          display: none;
+        }
+
+        section {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="actions"><button type="button" onclick="window.print()">Sacuvaj PDF</button></div>
+    <article class="document">
+      <header>
+        <img src="../assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" />
+        <div>
+          <div class="meta">
+            <span>Prezentacija 2026</span>
+            <span>Kotlovi na pelet</span>
+            <span>Pregled za objavu</span>
+          </div>
+          <h1>Dokument pregleda prezentacije</h1>
+        </div>
+        <p>Ovaj dokument prati aktuelnu web prezentaciju i sluzi kao cist pregled strukture, materijala, export opcija i checklist-e pre podizanja online.</p>
+      </header>
+
+      <main>
+        <section>
+          <h2>Sazetak projekta</h2>
+          <div class="facts">
+            <article><strong>25</strong><span>slajdova</span></article>
+            <article><strong>4</strong><span>video prikaza</span></article>
+            <article><strong>39</strong><span>koriscenih asseta</span></article>
+            <article><strong>93 MB</strong><span>aktivnog materijala</span></article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Tok prezentacije</h2>
+          <table>
+            <thead>
+              <tr><th>#</th><th>Slajd</th><th>Uloga u prezentaciji</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>01</td><td>O firmi</td><td>Uvod u tradiciju, objekat, iskustvo i kljucne godine.</td></tr>
+              <tr><td>02</td><td>Proizvodnja</td><td>Tehnologija, zaposleni, kvalitet i evropski standard.</td></tr>
+              <tr><td>03</td><td>Podela programa</td><td>Objasnjava tri nacina dovoda peleta i postavlja logiku deck-a.</td></tr>
+              <tr><td>04</td><td>EcoFlame</td><td>Premium video uvod u EcoFlame i izviruce loziste.</td></tr>
+              <tr><td>05</td><td>EcoFlame Plus</td><td>Prikaz dodatne opreme i komfornijeg sistema.</td></tr>
+              <tr><td>06</td><td>MB250</td><td>Automatika za EcoFlame platformu.</td></tr>
+              <tr><td>07</td><td>TKAN 1/2</td><td>Trajnozareci kotao sa automatskim nalaganjem.</td></tr>
+              <tr><td>08</td><td>SY325 TKAN</td><td>Regulacija i logika rada TKAN sistema.</td></tr>
+              <tr><td>09</td><td>TKAN ambijent</td><td>Ambijentalna fotografija kotla u prostoru.</td></tr>
+              <tr><td>10</td><td>TKAN presek</td><td>Industrijska konstrukcija i preseci.</td></tr>
+              <tr><td>11</td><td>EcoComfort</td><td>Kompaktna varijanta za dom i manje sisteme.</td></tr>
+              <tr><td>12</td><td>SY325 Basic</td><td>Osnovna automatika i parametri.</td></tr>
+              <tr><td>13</td><td>Nasipna lozista</td><td>Uvod u UNI, Biolux i Cuba grupu.</td></tr>
+              <tr><td>14</td><td>Biolux</td><td>Kamin za dnevni boravak i pratece komponente.</td></tr>
+              <tr><td>15</td><td>UNI</td><td>Video prikaz i informacije za kotlarnicu 15-25 kW.</td></tr>
+              <tr><td>16</td><td>Cuba</td><td>Story video i kamin za stanovanje.</td></tr>
+              <tr><td>17</td><td>SY250</td><td>Automatika za nasipno loziste.</td></tr>
+              <tr><td>18</td><td>FenX</td><td>Pelet kamin na vazduh sa story videom.</td></tr>
+              <tr><td>19</td><td>K serija</td><td>Klasicni kotlovi na cvrsto gorivo.</td></tr>
+              <tr><td>20</td><td>K presek</td><td>Donje sagorevanje i servisni elementi.</td></tr>
+              <tr><td>21</td><td>FK serija</td><td>Sporet-kotao i etazno grejanje.</td></tr>
+              <tr><td>22</td><td>FK presek</td><td>Termicko osiguranje i konstrukcija.</td></tr>
+              <tr><td>23</td><td>SY325 WOOD</td><td>Automatika za kotao na drva.</td></tr>
+              <tr><td>24</td><td>GRENNY</td><td>Kamin i dekorativno grejanje.</td></tr>
+              <tr><td>25</td><td>TKAN MINI</td><td>Kompaktna zavrsna ponuda.</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Export i podizanje</h2>
+          <ul>
+            <li>Glavna prezentacija ima dugme <strong>PDF export</strong> u levom dashboardu. Prvo prikazuje kratko uputstvo, zatim otvara browser print dialog za cuvanje kao PDF.</li>
+            <li>Ovaj dokument takodje ima <strong>Sacuvaj PDF</strong> dugme i moze da se koristi kao prateci pregled za interno odobravanje.</li>
+            <li>U Chrome print prozoru Destination mora rucno da se prebaci sa stampaca na <strong>Save as PDF</strong>.</li>
+            <li>Za cist upload paket koristi se komanda <code>node tools/build-release.js</code>, koja pravi <code>dist/</code> samo sa aktivnim fajlovima i koriscenim assetima.</li>
+            <li>Video fajlovi ostaju autoplay/muted/loop u prezentaciji, bez klasicnog player izgleda.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Checklist pre objave</h2>
+          <ul>
+            <li>Otvoriti <code>index.html</code> i brzo proci dashboard navigaciju od 01 do 25.</li>
+            <li>Proveriti da se EcoFlame, UNI, Cuba i FenX video snimci pokrecu automatski.</li>
+            <li>Napraviti PDF export i proveriti da video slajdovi koriste poster slike.</li>
+            <li>Ako se objavljuje preko Netlify/Vercel/static hostinga, publish folder moze biti <code>dist</code>.</li>
+            <li>Ako se objavljuje direktno preko GitHub Pages iz root-a, potrebno je commitovati izvorne fajlove i po potrebi izostaviti <code>dist</code>.</li>
+          </ul>
+          <p class="note">Napomena: izvorni asset folder zadrzava i neaktivne slike, da se materijal ne izgubi dok traje dizajnersko fino podesavanje.</p>
+        </section>
+      </main>
+    </article>
+  </body>
+</html>

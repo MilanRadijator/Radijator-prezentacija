@@ -1,0 +1,533 @@
+﻿<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radijator Inzenjering | Prezentacija kotlova 2026</title>
+    <meta
+      name="description"
+      content="Prezentacioni katalog zasnovan iskljucivo na materijalu iz Prezentacija 2026.pptx."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav class="deck-nav" aria-label="Navigacija kroz prezentaciju">
+      <div class="nav-brand">
+        <img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" />
+        <span>Prezentacija 2026</span>
+        <strong>Kotlovi na pelet</strong>
+      </div>
+      <div class="nav-status"><span>Mapa deck-a</span><strong>25 slajdova</strong></div>
+      <div class="nav-actions" aria-label="Export opcije">
+        <button type="button" data-print-deck>PDF export</button>
+        <a href="./exports/radijator-prezentacija-2026-dokument.html" target="_blank" rel="noopener">Dokument</a>
+      </div>
+      <div class="nav-list">
+        <a href="#s01"><span class="nav-num">01</span><span class="nav-text"><strong>O firmi</strong><small>tradicija, objekat i iskustvo</small></span></a>
+        <a href="#s02"><span class="nav-num">02</span><span class="nav-text"><strong>Proizvodnja</strong><small>tehnologija, tim i kvalitet</small></span></a>
+        <a href="#s03"><span class="nav-num">03</span><span class="nav-text"><strong>Podela programa</strong><small>osnovni nacini dovoda peleta</small></span></a>
+        <a href="#s04"><span class="nav-num">04</span><span class="nav-text"><strong>EcoFlame</strong><small>izviruce loziste i video prikaz</small></span></a>
+        <a href="#s05"><span class="nav-num">05</span><span class="nav-text"><strong>EcoFlame Plus</strong><small>dodatna oprema i sistem</small></span></a>
+        <a href="#s06"><span class="nav-num">06</span><span class="nav-text"><strong>MB250</strong><small>automatika EcoFlame programa</small></span></a>
+        <a href="#s07"><span class="nav-num">07</span><span class="nav-text"><strong>TKAN 1/2</strong><small>poluautomatski kotao na pelet</small></span></a>
+        <a href="#s08"><span class="nav-num">08</span><span class="nav-text"><strong>SY325 TKAN</strong><small>regulacija i rad sistema</small></span></a>
+        <a href="#s09"><span class="nav-num">09</span><span class="nav-text"><strong>TKAN ambijent</strong><small>kotao prikazan u prostoru</small></span></a>
+        <a href="#s10"><span class="nav-num">10</span><span class="nav-text"><strong>TKAN presek</strong><small>industrijska konstrukcija</small></span></a>
+        <a href="#s11"><span class="nav-num">11</span><span class="nav-text"><strong>EcoComfort</strong><small>kompaktno resenje za dom</small></span></a>
+        <a href="#s12"><span class="nav-num">12</span><span class="nav-text"><strong>SY325 Basic</strong><small>osnovna automatika sistema</small></span></a>
+        <a href="#s13"><span class="nav-num">13</span><span class="nav-text"><strong>Nasipna lozista</strong><small>uvod u UNI, Biolux i Cuba</small></span></a>
+        <a href="#s14"><span class="nav-num">14</span><span class="nav-text"><strong>Biolux</strong><small>porodica modela i snage</small></span></a>
+        <a href="#s15"><span class="nav-num">15</span><span class="nav-text"><strong>UNI</strong><small>nasipno loziste i video</small></span></a>
+        <a href="#s16"><span class="nav-num">16</span><span class="nav-text"><strong>Cuba</strong><small>ambijentalni story prikaz</small></span></a>
+        <a href="#s17"><span class="nav-num">17</span><span class="nav-text"><strong>SY250</strong><small>automatika za Cuba program</small></span></a>
+        <a href="#s18"><span class="nav-num">18</span><span class="nav-text"><strong>FenX</strong><small>sobna pec sa video prikazom</small></span></a>
+        <a href="#s19"><span class="nav-num">19</span><span class="nav-text"><strong>K serija</strong><small>klasicni kotlovi na cvrsto gorivo</small></span></a>
+        <a href="#s20"><span class="nav-num">20</span><span class="nav-text"><strong>K presek</strong><small>konstrukcija i servisiranje</small></span></a>
+        <a href="#s21"><span class="nav-num">21</span><span class="nav-text"><strong>FK serija</strong><small>sporet-kotao i etazno grejanje</small></span></a>
+        <a href="#s22"><span class="nav-num">22</span><span class="nav-text"><strong>FK presek</strong><small>dimenzije i loziste</small></span></a>
+        <a href="#s23"><span class="nav-num">23</span><span class="nav-text"><strong>SY325 WOOD</strong><small>upravljanje kotlom na drva</small></span></a>
+        <a href="#s24"><span class="nav-num">24</span><span class="nav-text"><strong>GRENNY</strong><small>kamin za ambijent i grejanje</small></span></a>
+        <a href="#s25"><span class="nav-num">25</span><span class="nav-text"><strong>TKAN MINI</strong><small>kompaktna zavrsna ponuda</small></span></a>
+      </div>
+    </nav>
+
+    <div class="export-dialog" data-export-dialog hidden role="dialog" aria-modal="true" aria-labelledby="export-title">
+      <div class="export-card">
+        <p class="eyebrow">PDF export</p>
+        <h2 id="export-title">Chrome prvo otvara print prozor</h2>
+        <p>U tom prozoru treba rucno promeniti <strong>Destination</strong> sa stampaca na <strong>Save as PDF</strong>. Browser ne dozvoljava stranici da sama prebaci destinaciju, zato se ovaj korak radi jednom u Chrome dialogu.</p>
+        <ol>
+          <li>Klikni <strong>Destination</strong> padajuci meni.</li>
+          <li>Izaberi <strong>Save as PDF</strong>.</li>
+          <li>Ako postoji <strong>Layout</strong>, izaberi <strong>Landscape</strong>. Paper size neka ostane <strong>A4</strong>.</li>
+          <li>Klikni <strong>Save</strong>. Prezentacija je podesena na 25 A4 landscape strana.</li>
+        </ol>
+        <div class="export-actions">
+          <button type="button" data-export-close>Vrati se</button>
+          <button type="button" data-export-print>Otvori PDF export</button>
+        </div>
+      </div>
+    </div>
+
+    <main class="deck">
+      <section class="slide company-intro" id="s01">
+        <header class="slide-head dark"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>O firmi</span></header>
+        <div class="company-hero reveal">
+          <img src="./assets/images/company-building-rex-0007.jpg" alt="Radijator Inzenjering poslovni objekat" />
+        </div>
+        <div class="company-copy reveal delay-1">
+          <p class="eyebrow">Tradicija proizvodnje</p>
+          <h2>Radijator Inzenjering</h2>
+          <p>Radijator inzenjering d.o.o. je pravni naslednik zanatske radnje Radijator, osnovane 1991. godine. Osnovna delatnost bila je montaza i odrzavanje centralnog grejanja, cime se firma bavi i danas.</p>
+          <p>Prvi toplovodni kotao na cvrsto gorivo izradjen je 1985. godine, a preduzece u danasnjoj formi postoji od 2002. godine.</p>
+          <div class="intro-stats">
+            <article><strong>1985</strong><span>prvi toplovodni kotao</span></article>
+            <article><strong>1991</strong><span>pocetak radnje Radijator</span></article>
+            <article><strong>2002</strong><span>danasnja forma preduzeca</span></article>
+          </div>
+        </div>
+        <footer class="slide-meta dark"><span>Tradicija i iskustvo</span><span>01</span></footer>
+      </section>
+
+      <section class="slide company-capabilities" id="s02">
+        <header class="slide-head"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>Proizvodnja</span></header>
+        <div class="capability-copy reveal">
+          <p class="eyebrow">Tehnologija i kvalitet</p>
+          <h2>Proizvodnja po savremenim evropskim standardima</h2>
+          <p>Kako se proizvodnja sirila i usavrsavala, kotlovi su poceli da se izradjuju najsavremenijim tehnologijama: lasersko secenje, CNC plazma postupak, CNC probijanje, robotsko zavarivanje i zavarivanje automatima.</p>
+          <p>Danas Radijator Inzenjering zaposljava preko 350 radnika, medju kojima je 40 diplomiranih masinskih inzenjera koji svakodnevno rade na unapredjenju kvaliteta proizvoda.</p>
+        </div>
+        <div class="capability-gallery reveal delay-1">
+          <img src="./assets/images/production.jpg" alt="Radijator proizvodnja" />
+          <img src="./assets/images/about-team.jpg" alt="Radijator tim" />
+          <img src="./assets/images/locations.jpg" alt="Radijator proizvodni kapaciteti" />
+        </div>
+        <div class="quality-strip reveal">
+          <article><span>350+</span><strong>zaposlenih</strong></article>
+          <article><span>40</span><strong>dipl. masinskih inzenjera</strong></article>
+          <article><span>ISO</span><strong>9001:2008 sistem kvaliteta</strong></article>
+          <article><span>EU</span><strong>osvajanje evropskih trzista</strong></article>
+        </div>
+        <footer class="slide-meta"><span>Tehnologija / kvalitet / trziste</span><span>02</span></footer>
+      </section>
+
+      <section class="slide editorial systems" id="s03">
+        <header class="slide-head"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>Podela programa</span></header>
+        <div class="copy-block reveal">
+          <p class="eyebrow">Kotlovi na pelet</p>
+          <h2>Tri osnovna nacina dovoda peleta</h2>
+          <p>Prezentacija pocinje podelom programa prema nacinu dolaska peleta u loziste. Ovaj redosled ostaje osnova za sve naredne slajdove.</p>
+        </div>
+        <div class="system-cards">
+          <article class="reveal"><img src="./assets/images/ppt-diagram-under-grate.jpeg" alt="Dolazak peleta ispod resetke" /><span>01</span><h3>Ispod resetke</h3><p>Izviruce loziste, osnova za EcoFlame i povezane sisteme.</p></article>
+          <article class="reveal delay-1"><img src="./assets/images/ppt-diagram-side-feed.jpeg" alt="Bocni dolazak peleta" /><span>02</span><h3>Bocni dolazak</h3><p>Pelet se dozira bocno, uz kontrolu vazduha i plamena.</p></article>
+          <article class="reveal"><img src="./assets/images/ppt-diagram-hopper.png" alt="Nasipno loziste" /><span>03</span><h3>Nasipno loziste</h3><p>Jednostavnija platforma za dobar pelet i redovno odrzavanje.</p></article>
+        </div>
+        <footer class="slide-meta"><span>Kotlovi na pelet</span><span>03</span></footer>
+      </section>
+
+      <section class="slide product-spread" id="s04">
+        <header class="slide-head"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>EcoFlame</span></header>
+        <div class="product-copy reveal">
+          <p class="eyebrow">Izviruce loziste</p>
+          <h2>EcoFlame 25/30 i EcoFlame Plus</h2>
+          <p>Kotao je namenjen sagorevanju drvnog peleta u automatskom rezimu i postavlja se u kotlarnicu.</p>
+        </div>
+        <div class="product-visual video-visual reveal delay-1">
+          <div class="story-video">
+            <video autoplay muted loop playsinline preload="metadata" poster="./assets/images/ppt-ecoflame-section.jpg">
+              <source src="./assets/videos/story-ecoflame.mp4" type="video/mp4" />
+            </video>
+            <img class="print-poster" src="./assets/images/ppt-ecoflame-section.jpg" alt="EcoFlame poster za PDF export" />
+            <span>Story EcoFlame</span>
+          </div>
+        </div>
+        <div class="spec-list reveal">
+          <div><span>Modeli</span><strong>EcoFlame 25/30, EcoFlame 25/30 Plus</strong></div>
+          <div><span>Izmenjivac</span><strong>cevni izmenjivac sa ciscenjem</strong></div>
+          <div><span>Dozer</span><strong>GGM 40W</strong></div>
+          <div><span>Potpala</span><strong>inox Vimosa 300W</strong></div>
+          <div><span>Loziste</span><strong>liveni T-komad, ventilator MplusM / ebm papst 65W</strong></div>
+        </div>
+        <div class="caption-strip">EcoFlame / automatski rezim / kotlarnica</div>
+        <footer class="slide-meta"><span>EcoFlame konstrukcija</span><span>04</span></footer>
+      </section>
+
+      <section class="slide product-spread" id="s05">
+        <header class="slide-head"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>EcoFlame Plus</span></header>
+        <div class="product-copy reveal">
+          <p class="eyebrow">Dodatna oprema</p>
+          <h2>Plus oprema za komforniji sistem</h2>
+          <p>Ovaj slajd ostaje odmah posle EcoFlame konstrukcije, jer objasnjava sta se dobija nadogradnjom sistema.</p>
+        </div>
+        <div class="product-visual reveal delay-1"><img src="./assets/images/ppt-ecoflame-plus-section.jpg" alt="EcoFlame Plus presek" /></div>
+        <div class="spec-list reveal">
+          <div><span>Silos</span><strong>upravljanje dodatnim silosem, senzor nivoa peleta i transporter</strong></div>
+          <div><span>Opcije</span><strong>sobni termostat, Modbus translator, 4HEAT</strong></div>
+          <div><span>Plus</span><strong>WILO elektronska pumpa, sigurnosni ventil, odzracni ventil</strong></div>
+          <div><span>Prednosti</span><strong>bolji stepen korisnosti, automatika vodi dve pumpe</strong></div>
+          <div><span>Dodatno</span><strong>moguce poruciti silos 320 kg</strong></div>
+        </div>
+        <div class="caption-strip">EcoFlame Plus / dodatna oprema / manja kotlarnica</div>
+        <footer class="slide-meta"><span>EcoFlame dodatna oprema</span><span>05</span></footer>
+      </section>
+
+      <section class="slide split-showcase dark" id="s06">
+        <div class="showcase-image reveal"><img src="./assets/images/ppt-control-mb250.png" alt="Tiemme MB250 Hydro STD11" /></div>
+        <div class="showcase-copy reveal delay-1">
+          <p class="eyebrow">Automatika EcoFlame</p>
+          <h2>Tiemme MB250 Hydro STD11</h2>
+          <p>LCD ekran i korigovani parametri za start rada, modulaciju i standby mirovanje.</p>
+          <div class="dark-spec">
+            <div><span>Parametri</span><strong>start rada / modulacija / standby mirovanje</strong></div>
+            <div><span>Prednosti</span><strong>snaga komponenata, softver, mogucnost programiranja</strong></div>
+            <div><span>Fokus</span><strong>fleksibilnost prilagodjavanja u radu</strong></div>
+          </div>
+        </div>
+        <footer class="slide-meta dark"><span>Automatika EcoFlame</span><span>06</span></footer>
+      </section>
+
+      <section class="slide brown-case" id="s07">
+        <div class="case-copy reveal">
+          <p class="eyebrow">TKAN</p>
+          <h2>Trajnozareci kotao sa automatskim nalaganjem</h2>
+          <p>TKAN program se deli na kucne kotlove manje snage, TKAN1 i TKAN2, i industrijske kotlove snage od 60 do 300 kW.</p>
+          <div class="white-label">Brzo prebacivanje sa peleta na drvo</div>
+        </div>
+        <div class="case-visual reveal delay-1">
+          <img src="./assets/images/ppt-tkan-1.png" alt="TKAN 1 kotao" />
+          <div class="red-label top">Pelet automatski</div>
+          <div class="red-label bottom">Drvo uz rucno lozenje i automatsku regulaciju</div>
+        </div>
+        <footer class="slide-meta dark"><span>TKAN 1 / TKAN 2</span><span>07</span></footer>
+      </section>
+
+      <section class="slide split-showcase dark" id="s08">
+        <div class="showcase-image reveal"><img src="./assets/images/ppt-control-sy325.png" alt="Tiemme SY325 automatika" /></div>
+        <div class="showcase-copy reveal delay-1">
+          <p class="eyebrow">Automatika TKAN 1 i 2</p>
+          <h2>Tiemme SY325</h2>
+          <p>Automatika prati start rada, modulaciju i standby, uz poseban rezim rada za drvo.</p>
+          <div class="dark-spec">
+            <div><span>Parametri</span><strong>start rada / modulacija / standby</strong></div>
+            <div><span>Rezimi</span><strong>pelet i drvo</strong></div>
+            <div><span>Prednosti</span><strong>snaga komponenata, softver, fleksibilno prilagodjavanje</strong></div>
+          </div>
+        </div>
+        <footer class="slide-meta dark"><span>Automatika TKAN</span><span>08</span></footer>
+      </section>
+
+      <section class="slide product-spread industrial" id="s09">
+        <header class="slide-head"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>TKAN industrijski</span></header>
+        <div class="product-copy reveal">
+          <p class="eyebrow">60-300 kW</p>
+          <h2>TKAN ind. osnovni i INTEGRA</h2>
+          <p>Industrijski TKAN dolazi posle kucnog TKAN-a, kao prirodan nastavak iste porodice proizvoda u vecim snagama.</p>
+        </div>
+        <div class="product-visual reveal delay-1"><img src="./assets/images/tkan-u-prostoru.jpg" alt="TKAN u prostoru" /></div>
+        <div class="spec-list reveal">
+          <div><span>Podela</span><strong>TKAN ind. osnovni i TKAN ind. INTEGRA</strong></div>
+          <div><span>Opseg</span><strong>60-300 kW</strong></div>
+          <div><span>INTEGRA</span><strong>odprasivanje i ciklon</strong></div>
+          <div><span>Gorivo</span><strong>pelet automatski, drvo veoma kratko</strong></div>
+          <div><span>Konstrukcija</span><strong>cevni izmenjivac, Leister 1.6 kW, primarni i sekundarni ventilator</strong></div>
+        </div>
+        <div class="caption-strip">TKAN industrijski / vece snage / INTEGRA</div>
+        <footer class="slide-meta"><span>TKAN industrijski</span><span>09</span></footer>
+      </section>
+
+      <section class="slide product-spread industrial" id="s10">
+        <header class="slide-head"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>TKAN industrijski presek</span></header>
+        <div class="product-copy reveal">
+          <p class="eyebrow">Presek</p>
+          <h2>TKAN ind. osnovni i INTEGRA kroz konstrukciju</h2>
+          <p>Ovaj slajd je zadrzan kao zaseban tehnicki presek, bez mesanja sa drugim proizvodima.</p>
+        </div>
+        <div class="product-visual reveal delay-1"><img src="./assets/images/ppt-tkan-industrial-section.png" alt="TKAN industrijski presek" /></div>
+        <div class="spec-list reveal">
+          <div><span>Presek</span><strong>TKAN ind. osnovni 60-300 kW</strong></div>
+          <div><span>INTEGRA</span><strong>TKAN ind. INTEGRA 60-300 kW</strong></div>
+          <div><span>Ciscenje</span><strong>loziste sa spiralama za ciscenje</strong></div>
+          <div><span>Motor</span><strong>trofazni kod kotlova od 100 kW</strong></div>
+        </div>
+        <div class="caption-strip">Presek / loziste / izmenjivac / ciklon</div>
+        <footer class="slide-meta"><span>Presek TKAN ind.</span><span>10</span></footer>
+      </section>
+
+      <section class="slide split-showcase dark" id="s11">
+        <div class="showcase-image reveal"><img src="./assets/images/eco-comfort-u-prostoru.jpg" alt="EcoComfort u prostoru" /></div>
+        <div class="showcase-copy reveal delay-1">
+          <p class="eyebrow">EcoComfort</p>
+          <h2>EcoComfort 25, 35 i 45 kW</h2>
+          <p>Kotao za sagorevanje drvnog peleta u automatskom rezimu, sa cevnim izmenjivacem za lakse ciscenje.</p>
+          <div class="dark-spec">
+            <div><span>Snage</span><strong>25 / 35 / 45 kW</strong></div>
+            <div><span>Potpala</span><strong>inox Vimosa 300W</strong></div>
+            <div><span>Dozer</span><strong>ABM 90W</strong></div>
+            <div><span>Prednosti</span><strong>bolji stepen korisnosti, automatika vodi dve pumpe</strong></div>
+          </div>
+        </div>
+        <footer class="slide-meta dark"><span>EcoComfort</span><span>11</span></footer>
+      </section>
+
+      <section class="slide split-showcase dark" id="s12">
+        <div class="showcase-image reveal"><img src="./assets/images/ppt-control-sy325-basic.png" alt="SY325 Basic automatika" /></div>
+        <div class="showcase-copy reveal delay-1">
+          <p class="eyebrow">Automatika SY325 Basic</p>
+          <h2>Tiemme SY325 Basic</h2>
+          <p>Automatika za EcoComfort zadrzava isti jezik prezentacije: parametri, prednosti i fleksibilnost.</p>
+          <div class="dark-spec">
+            <div><span>Parametri</span><strong>start rada / modulacija / standby</strong></div>
+            <div><span>Pumpe</span><strong>automatika vodi dve pumpe</strong></div>
+            <div><span>Prednosti</span><strong>snaga komponenata, softver, fleksibilno prilagodjavanje</strong></div>
+          </div>
+        </div>
+        <footer class="slide-meta dark"><span>SY325 Basic</span><span>12</span></footer>
+      </section>
+
+      <section class="slide editorial systems" id="s13">
+        <header class="slide-head"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>Nasipno loziste</span></header>
+        <div class="copy-block reveal">
+          <p class="eyebrow">UNI / Biolux / Cuba</p>
+          <h2>Kotlovi sa nasipnim lozistem</h2>
+          <p>Ova grupa dolazi posle EcoComfort-a, bas kao u PPTX-u. Namenjena je dobrom drvnom peletu i zahteva redovnije odrzavanje.</p>
+        </div>
+        <div class="system-cards">
+          <article class="reveal"><img src="./assets/images/ppt-uni-line.png" alt="UNI kotlovi" /><span>UNI</span><h3>UNI 15/20/25 Plus</h3><p>Kotlarnica, 15-25 kW instalacije.</p></article>
+          <article class="reveal delay-1"><img src="./assets/images/ppt-biolux.jpg" alt="Biolux kamin" /><span>Biolux</span><h3>Biolux 14/20</h3><p>Kamin za dnevni boravak.</p></article>
+          <article class="reveal"><img src="./assets/images/ppt-cuba.jpg" alt="Cuba kamin" /><span>Cuba</span><h3>Cuba 15/20</h3><p>Kamin za stanovanje.</p></article>
+        </div>
+        <footer class="slide-meta"><span>Nasipno loziste</span><span>13</span></footer>
+      </section>
+
+      <section class="slide editorial model-family" id="s14">
+        <header class="slide-head"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>Biolux</span></header>
+        <div class="copy-block reveal">
+          <p class="eyebrow">Biolux 14/20</p>
+          <h2>Kamin za dnevni boravak</h2>
+          <p>Biolux koristi cevni izmenjivac, nasipno loziste, dozer, silos 45 kg, FKK keramicki grejac i SY250 pelet automatiku.</p>
+        </div>
+        <div class="family-grid two">
+          <article class="reveal"><img src="./assets/images/ppt-biolux.jpg" alt="Biolux kamin" /><h3>Biolux 20 / 14</h3><p>Namena: dnevni boravak.</p></article>
+          <article class="reveal delay-1"><img src="./assets/images/ppt-biolux-product.png" alt="Biolux komponente" /><h3>Komponente</h3><p>Ekspanziona posuda 10L, Wilo 25/6, sigurnosni ventil, odzracni ventil, presostati.</p></article>
+        </div>
+        <footer class="slide-meta"><span>Biolux 14/20</span><span>14</span></footer>
+      </section>
+
+      <section class="slide editorial model-family" id="s15">
+        <header class="slide-head"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>UNI</span></header>
+        <div class="copy-block reveal">
+          <p class="eyebrow">UNI 15/20/25</p>
+          <h2>Nasipno loziste za kotlarnicu</h2>
+          <p>UNI 15 je za instalaciju 15 kW, UNI 20 za 20 kW, a UNI 25 za 25 kW. Konstrukcija prati istu logiku nasipnog lozista.</p>
+        </div>
+        <div class="family-grid story-layout">
+          <article class="reveal video-card feature-video">
+            <div class="story-video">
+              <video autoplay muted loop playsinline preload="metadata" poster="./assets/images/ppt-uni-line.png">
+                <source src="./assets/videos/story-uni-2.mp4" type="video/mp4" />
+              </video>
+              <img class="print-poster" src="./assets/images/ppt-uni-line.png" alt="UNI poster za PDF export" />
+              <span>Story UNI</span>
+            </div>
+            <h3>UNI linija</h3><p>Keramicki FKK grejac i SY250 pelet automatika.</p>
+          </article>
+          <article class="reveal delay-1 story-info-card">
+            <span>UNI 15 / 20 / 25</span>
+            <h3>Kotlarnica</h3>
+            <p>Nasipno loziste, cevni izmenjivac, dozer i silos 45 kg. Namenjeno instalacijama od 15 do 25 kW.</p>
+          </article>
+        </div>
+        <footer class="slide-meta"><span>UNI 15/20/25</span><span>15</span></footer>
+      </section>
+
+      <section class="slide media-slide" id="s16">
+        <div class="media-main video-main reveal">
+          <video autoplay muted loop playsinline preload="metadata" poster="./assets/images/ppt-cuba-room.jpg">
+            <source src="./assets/videos/story-cuba.mp4" type="video/mp4" />
+          </video>
+          <img class="print-poster" src="./assets/images/ppt-cuba-room.jpg" alt="Cuba poster za PDF export" />
+        </div>
+        <div class="media-copy reveal delay-1">
+          <p class="eyebrow">Cuba 15/20</p>
+          <h2>Kamin za stanovanje</h2>
+          <p>Cuba koristi cevni izmenjivac, nasipno loziste, dozer, silos 45 kg, FKK keramicki grejac i SY250 pelet automatiku.</p>
+          <div class="video-slots">
+            <div><span>Namena</span><strong>stanovanje i enterijeri</strong></div>
+            <div><span>Komponente</span><strong>ekspanziona posuda, Wilo pumpa, ventili i presostati</strong></div>
+          </div>
+        </div>
+        <footer class="slide-meta dark"><span>Cuba 15/20</span><span>16</span></footer>
+      </section>
+
+      <section class="slide split-showcase dark" id="s17">
+        <div class="showcase-image reveal"><img src="./assets/images/ppt-control-sy250.png" alt="SY250 pelet automatika" /></div>
+        <div class="showcase-copy reveal delay-1">
+          <p class="eyebrow">Automatika nasipnog lozista</p>
+          <h2>Tiemme SY250 pelet</h2>
+          <p>SY250 dolazi posle Biolux, UNI i Cuba grupe, jer upravlja platformom nasipnog lozista.</p>
+          <div class="dark-spec">
+            <div><span>Parametri</span><strong>start rada / modulacija / standby gasenje</strong></div>
+            <div><span>Prednosti</span><strong>snaga komponenata, softver, mogucnost programiranja</strong></div>
+            <div><span>Fokus</span><strong>fleksibilnost prilagodjavanja</strong></div>
+          </div>
+        </div>
+        <footer class="slide-meta dark"><span>SY250</span><span>17</span></footer>
+      </section>
+
+      <section class="slide media-slide" id="s18">
+        <div class="media-main video-main reveal">
+          <video autoplay muted loop playsinline preload="metadata" poster="./assets/images/ppt-fenx-room.jpg">
+            <source src="./assets/videos/story-fenx.mp4" type="video/mp4" />
+          </video>
+          <img class="print-poster" src="./assets/images/ppt-fenx-room.jpg" alt="FenX poster za PDF export" />
+        </div>
+        <div class="media-copy reveal delay-1">
+          <p class="eyebrow">FenX</p>
+          <h2>Pelet kamin na vazduh</h2>
+          <p>FenX koristi silos 20 kg, transport peleta preko dozera, FKK keramicki grejac i SY250 pelet automatiku.</p>
+          <div class="video-slots">
+            <div><span>Silos</span><strong>20 kg</strong></div>
+            <div><span>Automatika</span><strong>SY250 pelet</strong></div>
+          </div>
+        </div>
+        <footer class="slide-meta dark"><span>FenX</span><span>18</span></footer>
+      </section>
+
+      <section class="slide dark kfk" id="s19">
+        <header class="slide-head dark"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>K serija</span></header>
+        <div class="kfk-copy reveal">
+          <p class="eyebrow">Kotlovi serije K</p>
+          <h2>K18-50 kW</h2>
+          <p>Prvi slajd K serije ostaje proizvodni uvod: konstrukcija, materijali i osnovne karakteristike.</p>
+          <div class="dark-spec">
+            <div><span>Karakteristike</span><strong>koso loziste, rostovi, klapna</strong></div>
+            <div><span>Snaga</span><strong>K18 do K50 kW</strong></div>
+          </div>
+        </div>
+        <div class="kfk-gallery reveal delay-1">
+          <img src="./assets/images/ppt-k-series.png" alt="K serija kotao" />
+          <img src="./assets/images/ppt-k-section.jpg" alt="K serija detalj" />
+          <img src="./assets/images/ppt-k-cross-section-flat.png" alt="K serija presek" />
+        </div>
+        <footer class="slide-meta dark"><span>K serija</span><span>19</span></footer>
+      </section>
+
+      <section class="slide product-spread" id="s20">
+        <header class="slide-head"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>K serija presek</span></header>
+        <div class="product-copy reveal">
+          <p class="eyebrow">Poprecni presek</p>
+          <h2>Donje sagorevanje</h2>
+          <p>Drugi K slajd je samo presek, da se ne mesa sa uvodnim modelom.</p>
+        </div>
+        <div class="product-visual reveal delay-1"><img src="./assets/images/ppt-k-cross-section-flat.png" alt="K serija poprecni presek" /></div>
+        <div class="spec-list reveal">
+          <div><span>Serija</span><strong>K18-50 kW</strong></div>
+          <div><span>Presek</span><strong>poprecni presek kotla</strong></div>
+          <div><span>Sagorevanje</span><strong>donje sagorevanje</strong></div>
+        </div>
+        <div class="caption-strip">K serija / poprecni presek / donje sagorevanje</div>
+        <footer class="slide-meta"><span>K serija presek</span><span>20</span></footer>
+      </section>
+
+      <section class="slide dark kfk" id="s21">
+        <header class="slide-head dark"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>FK serija</span></header>
+        <div class="kfk-copy reveal">
+          <p class="eyebrow">Kotlovi serije FK</p>
+          <h2>FK1, FK2, FK3, FK4</h2>
+          <p>FK serija se uvodi nakon K serije i dodaje automatiku i ventilator.</p>
+          <div class="dark-spec">
+            <div><span>Snaga</span><strong>18-50 kW</strong></div>
+            <div><span>Karakteristike</span><strong>koso loziste, automatika, ventilator, rostovi, klapna</strong></div>
+          </div>
+        </div>
+        <div class="kfk-gallery reveal delay-1">
+          <img src="./assets/images/ppt-fk-product.jpg" alt="FK kotao" />
+          <img src="./assets/images/ppt-fk-detail.png" alt="FK detalj" />
+          <img src="./assets/images/ppt-fk-cross-section.png" alt="FK presek" />
+        </div>
+        <footer class="slide-meta dark"><span>FK serija</span><span>21</span></footer>
+      </section>
+
+      <section class="slide product-spread" id="s22">
+        <header class="slide-head"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>FK presek</span></header>
+        <div class="product-copy reveal">
+          <p class="eyebrow">Poprecni presek FK</p>
+          <h2>Spirala za termicko osiguranje</h2>
+          <p>Tehnicki presek FK serije ostaje zaseban, bas kao u izvornoj prezentaciji.</p>
+        </div>
+        <div class="product-visual reveal delay-1"><img src="./assets/images/ppt-fk-cross-section.png" alt="FK poprecni presek" /></div>
+        <div class="spec-list reveal">
+          <div><span>Presek</span><strong>poprecni presek FK</strong></div>
+          <div><span>Sigurnost</span><strong>spirala za termicko osiguranje</strong></div>
+          <div><span>Regulacija</span><strong>automatika i ventilator</strong></div>
+        </div>
+        <div class="caption-strip">FK serija / poprecni presek / termicko osiguranje</div>
+        <footer class="slide-meta"><span>FK presek</span><span>22</span></footer>
+      </section>
+
+      <section class="slide split-showcase dark" id="s23">
+        <div class="showcase-image reveal"><img src="./assets/images/ppt-control-wood.png" alt="SY325 WOOD automatika" /></div>
+        <div class="showcase-copy reveal delay-1">
+          <p class="eyebrow">Automatika SY325 WOOD</p>
+          <h2>Tiemme SY325</h2>
+          <p>Slajd ostaje posle FK preseka, jer pripada delu prezentacije o kotlovima na drvo i automatskoj regulaciji.</p>
+          <div class="dark-spec">
+            <div><span>Parametri</span><strong>start rada / modulacija / standby</strong></div>
+            <div><span>Prednosti</span><strong>snaga komponenata, softver, automatika vodi dve pumpe</strong></div>
+            <div><span>Fokus</span><strong>fleksibilnost prilagodjavanja</strong></div>
+          </div>
+        </div>
+        <footer class="slide-meta dark"><span>SY325 WOOD</span><span>23</span></footer>
+      </section>
+
+      <section class="slide product-spread" id="s24">
+        <header class="slide-head"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>GRENNY</span></header>
+        <div class="product-copy reveal">
+          <p class="eyebrow">Nasipno loziste</p>
+          <h2>GRENNY</h2>
+          <p>GRENNY sada koristi svoje slike iz PPTX-a, ne pozajmljene slike drugih modela.</p>
+        </div>
+        <div class="product-visual reveal delay-1"><img src="./assets/images/ppt-grenny-section.png" alt="GRENNY presek" /></div>
+        <div class="spec-list reveal">
+          <div><span>Izmenjivac</span><strong>cevni izmenjivac</strong></div>
+          <div><span>Loziste</span><strong>nasipno loziste</strong></div>
+          <div><span>Silos</span><strong>30 kg</strong></div>
+          <div><span>Automatika</span><strong>SY250 pelet</strong></div>
+          <div><span>Komponente</span><strong>ekspanziona posuda 10L, Wilo 25/6, sigurnosni i odzracni ventil, presostati</strong></div>
+        </div>
+        <div class="caption-strip">GRENNY / proizvod / presek / komponente</div>
+        <footer class="slide-meta"><span>GRENNY</span><span>24</span></footer>
+      </section>
+
+      <section class="slide product-spread" id="s25">
+        <header class="slide-head"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>TKAN MINI</span></header>
+        <div class="product-copy reveal">
+          <p class="eyebrow">Zavrsni slajd iz PPTX-a</p>
+          <h2>TKAN MINI</h2>
+          <p>TKAN MINI zatvara prezentaciju kao kompaktno resenje za sagorevanje peleta i drva u automatskom rezimu.</p>
+        </div>
+        <div class="product-visual reveal delay-1"><img src="./assets/images/ppt-tkan-mini-section.jpg" alt="TKAN MINI presek" /></div>
+        <div class="spec-list reveal">
+          <div><span>Namena</span><strong>sagorevanje peleta i drva u automatskom rezimu</strong></div>
+          <div><span>Izmenjivac</span><strong>cevni izmenjivac sa ciscenjem</strong></div>
+          <div><span>Dozer</span><strong>GGM 40W</strong></div>
+          <div><span>Potpala</span><strong>inox Vimosa 300W</strong></div>
+          <div><span>Loziste</span><strong>liveni T-komad, ventilator MplusM / ebm papst 65W</strong></div>
+        </div>
+        <div class="caption-strip">TKAN MINI / pelet i drva / automatski rezim</div>
+        <footer class="slide-meta"><span>TKAN MINI</span><span>25</span></footer>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
+
+

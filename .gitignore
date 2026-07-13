@@ -1,0 +1,25 @@
+dist/
+.chrome-pdf-profile/
+Thumbs.db
+.DS_Store
+
+# Lokalna rezerva materijala koja trenutno nije povezana u prezentaciji.
+assets/images/.gitkeep
+assets/images/bedz-35-godina.png
+assets/images/ecoflame-plus-30.png
+assets/images/fenx.png
+assets/images/hero-ecoflame.jpg
+assets/images/ppt-ecocomfort.png
+assets/images/ppt-grenny-product.png
+assets/images/ppt-logo.jpeg
+assets/images/ppt-since-1991.png
+assets/images/ppt-tkan-industrial.png
+assets/images/ppt-tkan-section.png
+assets/images/ppt-uni-25.png
+assets/images/radojko-janic.jpg
+assets/images/rex-kotao.jpg
+assets/images/serija-k.png
+assets/images/tkan-12.png
+assets/images/tkan-300-integra.png
+assets/media/
+assets/videos/.gitkeep
