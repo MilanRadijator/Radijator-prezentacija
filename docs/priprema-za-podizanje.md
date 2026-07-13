@@ -6,10 +6,10 @@ Datum pregleda: 2026-07-13
 
 Prezentacija je spremna kao staticki web deck:
 
-- 25 slajdova
-- 25 stavki u levom dashboardu
+- 28 slajdova
+- 28 stavki u levom dashboardu
 - 4 autoplay/muted/loop video snimka
-- 37 aktivnih asset referenci
+- 43 aktivne asset reference
 - 0 nedostajucih lokalnih fajlova
 - `dist/` paket napravljen za upload
 
@@ -39,7 +39,7 @@ Uradjeno:
 Velicine:
 
 - Izvorni `assets/`: 65 fajlova, oko 108.75 MB.
-- Release `dist/`: 43 fajla, oko 93.13 MB.
+- Release `dist/`: 50 fajlova, oko 94.11 MB.
 
 Najvecu tezinu nose MP4 fajlovi:
 
@@ -60,7 +60,7 @@ Provereno:
 
 ## Preporuke pre javne objave
 
-- Rucno otvoriti `dist/index.html` i proci slajdove 01-25.
+- Rucno otvoriti `dist/index.html` i proci slajdove 01-28.
 - Testirati PDF export iz glavne prezentacije.
 - Testirati PDF export iz preglednog dokumenta.
 - Ako se zeli brze ucitavanje na slabijem internetu, sledeci korak je kompresija MP4 fajlova.

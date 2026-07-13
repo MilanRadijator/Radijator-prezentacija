@@ -806,6 +806,236 @@ h3 {
   line-height: 1.35;
 }
 
+.development-flow {
+  display: grid;
+  grid-template-columns: minmax(360px, 0.72fr) minmax(0, 1.28fr);
+  grid-template-rows: auto 1fr;
+  gap: 24px 46px;
+  padding: clamp(96px, 7vw, 122px) clamp(28px, 4vw, 64px) 82px;
+}
+
+.development-copy {
+  position: relative;
+  z-index: 2;
+  align-self: start;
+}
+
+.development-copy h2 {
+  margin-top: 22px;
+  max-width: 680px;
+}
+
+.development-copy p:not(.eyebrow) {
+  max-width: 640px;
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.1vw, 1.14rem);
+  font-weight: 650;
+}
+
+.flow-map {
+  position: relative;
+  z-index: 2;
+  grid-row: 1 / span 2;
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  align-content: center;
+}
+
+.flow-map article {
+  min-height: 158px;
+  padding: 20px;
+  border: 1px solid rgba(23, 20, 18, 0.12);
+  border-radius: 28px;
+  background:
+    linear-gradient(145deg, rgba(255, 250, 241, 0.92), rgba(235, 226, 212, 0.72)),
+    radial-gradient(circle at 100% 0, rgba(217, 39, 34, 0.12), transparent 8rem);
+  box-shadow: var(--shadow-soft);
+}
+
+.flow-map article span {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 18px;
+  place-items: center;
+  border-radius: 14px;
+  color: var(--white);
+  background: var(--red);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.flow-map article strong,
+.process-stack strong {
+  display: block;
+  color: var(--graphite);
+  line-height: 1.2;
+}
+
+.flow-map article small {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.process-stack {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 10px;
+  align-self: end;
+}
+
+.process-stack div {
+  padding: 16px 18px;
+  border: 1px solid rgba(23, 20, 18, 0.12);
+  border-radius: 20px;
+  background: rgba(255, 250, 241, 0.82);
+  box-shadow: var(--shadow-soft);
+}
+
+.process-stack span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--red);
+  font-size: 0.66rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.pdm-showcase {
+  display: grid;
+  grid-template-columns: minmax(360px, 0.82fr) minmax(0, 1.18fr);
+  gap: clamp(28px, 4vw, 64px);
+  padding: clamp(96px, 7vw, 122px) clamp(28px, 4vw, 64px) 82px;
+}
+
+.pdm-copy {
+  position: relative;
+  z-index: 2;
+  align-self: center;
+}
+
+.pdm-copy h2 {
+  margin-top: 22px;
+  max-width: 720px;
+}
+
+.pdm-copy p:not(.eyebrow) {
+  max-width: 660px;
+  margin-top: 24px;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: clamp(1rem, 1.1vw, 1.16rem);
+  font-weight: 700;
+}
+
+.pdm-visual {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 16px;
+  align-self: center;
+}
+
+.pdm-visual img,
+.validation-grid img {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 30px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.pdm-visual img:first-child {
+  height: clamp(320px, 35vw, 500px);
+}
+
+.pdm-visual img:last-child {
+  height: clamp(190px, 17vw, 270px);
+}
+
+.validation-lab {
+  display: grid;
+  grid-template-columns: minmax(330px, 0.62fr) minmax(0, 1.38fr);
+  gap: 34px 44px;
+  padding: clamp(96px, 7vw, 122px) clamp(28px, 4vw, 64px) 82px;
+}
+
+.validation-copy {
+  position: relative;
+  z-index: 2;
+  align-self: center;
+}
+
+.validation-copy h2 {
+  margin-top: 22px;
+  max-width: 680px;
+}
+
+.validation-copy p:not(.eyebrow) {
+  max-width: 620px;
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.1vw, 1.14rem);
+  font-weight: 650;
+}
+
+.validation-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  align-content: center;
+}
+
+.validation-grid article {
+  overflow: hidden;
+  border: 1px solid rgba(23, 20, 18, 0.12);
+  border-radius: 30px;
+  background: rgba(255, 250, 241, 0.88);
+  box-shadow: var(--shadow-soft);
+}
+
+.validation-grid img {
+  width: 100%;
+  height: clamp(160px, 17vw, 245px);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.validation-grid span {
+  display: block;
+  margin: 18px 20px 8px;
+  color: var(--red);
+  font-size: 0.64rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.validation-grid h3 {
+  margin: 0 20px;
+  font-size: clamp(1.24rem, 1.8vw, 1.72rem);
+}
+
+.validation-grid p {
+  margin: 10px 20px 20px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 .systems,
 .model-family {
   padding: clamp(92px, 7vw, 118px) clamp(28px, 4vw, 64px) 78px;
@@ -1421,6 +1651,9 @@ h3 {
 
   .company-intro,
   .company-capabilities,
+  .development-flow,
+  .pdm-showcase,
+  .validation-lab,
   .product-spread,
   .split-showcase,
   .brown-case,
@@ -1441,6 +1674,12 @@ h3 {
     grid-column: auto;
   }
 
+  .flow-map,
+  .validation-grid {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
   .video-visual .story-video {
     width: min(420px, 100%);
     justify-self: center;
@@ -1449,6 +1688,7 @@ h3 {
   .system-cards,
   .family-grid,
   .family-grid.two,
+  .flow-map,
   .quality-strip {
     grid-template-columns: 1fr 1fr;
   }
@@ -1494,6 +1734,9 @@ h3 {
 
   .company-copy,
   .company-capabilities,
+  .development-flow,
+  .pdm-showcase,
+  .validation-lab,
   .systems,
   .product-spread,
   .showcase-copy,
@@ -1524,6 +1767,8 @@ h3 {
   .family-grid.two,
   .intro-stats,
   .capability-gallery,
+  .flow-map,
+  .validation-grid,
   .quality-strip,
   .spec-list div,
   .dark-spec div {
@@ -1534,6 +1779,10 @@ h3 {
   .family-grid img,
   .capability-gallery img,
   .capability-gallery img:first-child,
+  .pdm-visual img,
+  .pdm-visual img:first-child,
+  .pdm-visual img:last-child,
+  .validation-grid img,
   .kfk-gallery img,
   .kfk-gallery img:first-child {
     height: 260px;
@@ -1670,6 +1919,9 @@ h3 {
 
   .company-intro,
   .company-capabilities,
+  .development-flow,
+  .pdm-showcase,
+  .validation-lab,
   .systems,
   .model-family,
   .product-spread,

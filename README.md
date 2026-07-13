@@ -5,7 +5,7 @@ Moderna staticka web prezentacija za kotlove, sredjena prema izvornoj prezentaci
 
 ## Struktura
 
-- `index.html` glavni deck sa 25 slajdova: uvod o firmi i PPTX tok kotlova
+- `index.html` glavni deck sa 28 slajdova: uvod o firmi, razvojni blok i PPTX tok kotlova
 - `styles.css` prezentacioni katalog stil, levi dashboard, layout, responzivni prikaz
 - `i18n.js` visejezicni sloj za SR, EN, DE i SL verziju prezentacije
 - `main.js` blage animacije pri skrolu i pracenje aktivnog slajda u dashboardu
@@ -34,24 +34,29 @@ klasicnih player kontrola:
 Aktivni deck je sveden na jedan izvor: `Prezentacija 2026.pptx`.
 
 U fajlu na toj putanji detektovana su 24 XML slajda. Web prezentacija sada ima
-uvod o firmi pre tehnickog dela, a zatim prati PPTX tok kotlova bez
-direktor/kontakt prodajnih prosirenja:
+uvod o firmi i razvojni blok pre tehnickog dela, a zatim prati PPTX tok kotlova
+bez direktor/kontakt prodajnih prosirenja:
 
 1. uvod o firmi, tradiciji i proizvodnji
-2. podela kotlova na pelet
-3. EcoFlame i EcoFlame Plus
-4. automatika MB250
-5. TKAN 1/2 i TKAN industrijski
-6. EcoComfort i SY325 Basic
-7. nasipna lozista: UNI, Biolux, Cuba
-8. SY250, FenX
-9. K i FK serije sa presecima
-10. SY325 WOOD
-11. GREENY i TKAN MINI
+2. razvojni tok: PDM, ERP, CAM i put od zahteva do gotovog proizvoda
+3. SolidWorks PDM, kontrola revizija i utrosak sirovina
+4. dokumentacija, ispitivanje i elektro sektor
+5. podela kotlova na pelet
+6. EcoFlame i EcoFlame Plus
+7. automatika MB250
+8. TKAN 1/2 i TKAN industrijski
+9. EcoComfort i SY325 Basic
+10. nasipna lozista: UNI, Biolux, Cuba
+11. SY250, FenX
+12. K i FK serije sa presecima
+13. SY325 WOOD
+14. GREENY i TKAN MINI
 
 Dodatno su iz PPTX media foldera ubacene slike koje su falile u prethodnoj verziji:
 logo, `Since 1991`, dijagrami nacina dovoda peleta, UNI slike i pravi GREENY
 proizvod/presek.
+Iz prezentacije `Radijator prezentacija 2019 za Masinski fax.pptx` dodati su PDM,
+SolidWorks Composer, ispitna stanica i elektro sektor materijali za razvojni blok.
 
 Deck se moze otvoriti direktno preko `index.html` bez posebnog servera.
 
@@ -73,7 +78,7 @@ Chrome zbog sigurnosnih pravila statickih stranica ne dozvoljava tiho cuvanje
 PDF-a bez sistemskog print dijaloga, niti dozvoljava da stranica sama prebaci
 Destination sa stampaca na `Save as PDF`. Zato je export tok: klik na `PDF
 export`, zatim `Otvori PDF export`, u Destination rucno izabrati `Save as PDF`,
-pa Save. Print CSS je podesen na 25 strana. Za video slajdove su dodate poster
+pa Save. Print CSS je podesen na 28 strana. Za video slajdove su dodate poster
 slike u print modu, da PDF export ne ostane sa praznim ili crnim video poljima.
 
 ## Priprema za upload
