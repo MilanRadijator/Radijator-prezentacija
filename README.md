@@ -7,6 +7,7 @@ Moderna staticka web prezentacija za kotlove, sredjena prema izvornoj prezentaci
 
 - `index.html` glavni deck sa 25 slajdova: uvod o firmi i PPTX tok kotlova
 - `styles.css` prezentacioni katalog stil, levi dashboard, layout, responzivni prikaz
+- `i18n.js` visejezicni sloj za SR, EN, DE i SL verziju prezentacije
 - `main.js` blage animacije pri skrolu i pracenje aktivnog slajda u dashboardu
 - `assets/images/` slike, preseci, dijagrami i kontroleri izvuceni iz PPTX-a
 - `assets/videos/` story video snimci ubaceni na odgovarajuce proizvodne slajdove
@@ -46,13 +47,20 @@ direktor/kontakt prodajnih prosirenja:
 8. SY250, FenX
 9. K i FK serije sa presecima
 10. SY325 WOOD
-11. GRENNY i TKAN MINI
+11. GREENY i TKAN MINI
 
 Dodatno su iz PPTX media foldera ubacene slike koje su falile u prethodnoj verziji:
-logo, `Since 1991`, dijagrami nacina dovoda peleta, UNI slike i pravi GRENNY
+logo, `Since 1991`, dijagrami nacina dovoda peleta, UNI slike i pravi GREENY
 proizvod/presek.
 
 Deck se moze otvoriti direktno preko `index.html` bez posebnog servera.
+
+## Jezici
+
+Srpski ostaje primarni izvorni tekst u HTML-u. U levom dashboardu je dodat izbor
+jezika `SR / EN / DE / SL`, a izabrani jezik se pamti u browseru. PDF export
+koristi trenutno aktivan jezik, jer se tekst prevodi direktno u prezentaciji pre
+otvaranja print dijaloga.
 
 ## Export
 

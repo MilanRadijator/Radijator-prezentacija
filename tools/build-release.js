@@ -6,6 +6,7 @@ const dist = path.join(root, "dist");
 const entryFiles = [
   "index.html",
   "styles.css",
+  "i18n.js",
   "main.js",
   "README.md",
   "docs/priprema-za-podizanje.md",

@@ -24,6 +24,15 @@
         <strong>Kotlovi na pelet</strong>
       </div>
       <div class="nav-status"><span>Mapa deck-a</span><strong>25 slajdova</strong></div>
+      <div class="language-switcher" data-language-switcher aria-label="Izbor jezika">
+        <span class="language-label">Jezik</span>
+        <div class="language-options">
+          <button type="button" data-language="sr" aria-pressed="true">SR</button>
+          <button type="button" data-language="en" aria-pressed="false">EN</button>
+          <button type="button" data-language="de" aria-pressed="false">DE</button>
+          <button type="button" data-language="sl" aria-pressed="false">SL</button>
+        </div>
+      </div>
       <div class="nav-actions" aria-label="Export opcije">
         <button type="button" data-print-deck>PDF export</button>
         <a href="./exports/radijator-prezentacija-2026-dokument.html" target="_blank" rel="noopener">Dokument</a>
@@ -52,7 +61,7 @@
         <a href="#s21"><span class="nav-num">21</span><span class="nav-text"><strong>FK serija</strong><small>sporet-kotao i etazno grejanje</small></span></a>
         <a href="#s22"><span class="nav-num">22</span><span class="nav-text"><strong>FK presek</strong><small>dimenzije i loziste</small></span></a>
         <a href="#s23"><span class="nav-num">23</span><span class="nav-text"><strong>SY325 WOOD</strong><small>upravljanje kotlom na drva</small></span></a>
-        <a href="#s24"><span class="nav-num">24</span><span class="nav-text"><strong>GRENNY</strong><small>kamin za ambijent i grejanje</small></span></a>
+        <a href="#s24"><span class="nav-num">24</span><span class="nav-text"><strong>GREENY</strong><small>kamin za ambijent i grejanje</small></span></a>
         <a href="#s25"><span class="nav-num">25</span><span class="nav-text"><strong>TKAN MINI</strong><small>kompaktna zavrsna ponuda</small></span></a>
       </div>
     </nav>
@@ -61,12 +70,13 @@
       <div class="export-card">
         <p class="eyebrow">PDF export</p>
         <h2 id="export-title">Chrome prvo otvara print prozor</h2>
-        <p>U tom prozoru treba rucno promeniti <strong>Destination</strong> sa stampaca na <strong>Save as PDF</strong>. Browser ne dozvoljava stranici da sama prebaci destinaciju, zato se ovaj korak radi jednom u Chrome dialogu.</p>
+        <p data-i18n-html="exportLead">U tom prozoru treba rucno promeniti <strong>Destination</strong> sa stampaca na <strong>Save as PDF</strong>. Browser ne dozvoljava stranici da sama prebaci destinaciju, zato se ovaj korak radi jednom u Chrome dialogu.</p>
         <ol>
-          <li>Klikni <strong>Destination</strong> padajuci meni.</li>
-          <li>Izaberi <strong>Save as PDF</strong>.</li>
-          <li>Ako postoji <strong>Layout</strong>, izaberi <strong>Landscape</strong>. Paper size neka ostane <strong>A4</strong>.</li>
-          <li>Klikni <strong>Save</strong>. Prezentacija je podesena na 25 A4 landscape strana.</li>
+          <li data-i18n-html="exportStepDestination">Klikni <strong>Destination</strong> padajuci meni.</li>
+          <li data-i18n-html="exportStepSaveAsPdf">Izaberi <strong>Save as PDF</strong>.</li>
+          <li data-i18n-html="exportStepLandscape">Ako postoji <strong>Layout</strong>, izaberi <strong>Landscape</strong>. Paper size neka ostane <strong>A4</strong>.</li>
+          <li data-i18n-html="exportStepSettings">U <strong>More settings</strong> stavi <strong>Margins</strong> na <strong>None</strong> i ukljuci <strong>Background graphics</strong>.</li>
+          <li data-i18n-html="exportStepSave">Klikni <strong>Save</strong>. Prezentacija je podesena na 25 A4 landscape strana.</li>
         </ol>
         <div class="export-actions">
           <button type="button" data-export-close>Vrati se</button>
@@ -488,13 +498,13 @@
       </section>
 
       <section class="slide product-spread" id="s24">
-        <header class="slide-head"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>GRENNY</span></header>
+        <header class="slide-head"><span class="head-brand"><img src="./assets/images/radijator-logo-transparent.png" alt="Radijator Inzenjering" /></span><span>GREENY</span></header>
         <div class="product-copy reveal">
           <p class="eyebrow">Nasipno loziste</p>
-          <h2>GRENNY</h2>
-          <p>GRENNY sada koristi svoje slike iz PPTX-a, ne pozajmljene slike drugih modela.</p>
+          <h2>GREENY</h2>
+          <p>GREENY sada koristi svoje slike iz PPTX-a, ne pozajmljene slike drugih modela.</p>
         </div>
-        <div class="product-visual reveal delay-1"><img src="./assets/images/ppt-grenny-section.png" alt="GRENNY presek" /></div>
+        <div class="product-visual reveal delay-1"><img src="./assets/images/ppt-grenny-section.png" alt="GREENY presek" /></div>
         <div class="spec-list reveal">
           <div><span>Izmenjivac</span><strong>cevni izmenjivac</strong></div>
           <div><span>Loziste</span><strong>nasipno loziste</strong></div>
@@ -502,8 +512,8 @@
           <div><span>Automatika</span><strong>SY250 pelet</strong></div>
           <div><span>Komponente</span><strong>ekspanziona posuda 10L, Wilo 25/6, sigurnosni i odzracni ventil, presostati</strong></div>
         </div>
-        <div class="caption-strip">GRENNY / proizvod / presek / komponente</div>
-        <footer class="slide-meta"><span>GRENNY</span><span>24</span></footer>
+        <div class="caption-strip">GREENY / proizvod / presek / komponente</div>
+        <footer class="slide-meta"><span>GREENY</span><span>24</span></footer>
       </section>
 
       <section class="slide product-spread" id="s25">
@@ -526,8 +536,7 @@
       </section>
     </main>
 
+    <script src="./i18n.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
-
-

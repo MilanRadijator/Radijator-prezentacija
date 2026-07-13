@@ -181,6 +181,49 @@ a {
   text-transform: uppercase;
 }
 
+.language-switcher {
+  display: grid;
+  gap: 8px;
+  padding: 0 0 12px;
+}
+
+.language-label {
+  padding: 0 3px;
+  color: var(--red-hot);
+  font-size: 0.58rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.language-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.language-options button {
+  min-height: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.07);
+  font: inherit;
+  font-size: 0.64rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: color 180ms ease, background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.language-options button:hover,
+.language-options button.is-active {
+  color: var(--white);
+  border-color: rgba(239, 51, 45, 0.68);
+  background: linear-gradient(135deg, rgba(217, 39, 34, 0.88), rgba(143, 23, 21, 0.82));
+  transform: translateY(-1px);
+}
+
 .nav-actions {
   display: grid;
   grid-template-columns: 1fr;
@@ -1359,7 +1402,7 @@ h3 {
   transition-delay: 140ms;
 }
 
-@media (max-width: 1160px) {
+@media screen and (max-width: 1160px) {
   body::before,
   body::after {
     display: none;
@@ -1420,7 +1463,7 @@ h3 {
   }
 }
 
-@media (max-width: 760px) {
+@media screen and (max-width: 760px) {
   html {
     scroll-snap-type: none;
   }
