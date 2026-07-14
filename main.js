@@ -33,9 +33,32 @@ document.querySelector("[data-export-close]")?.addEventListener("click", () => {
   closeExportDialog();
 });
 
-document.querySelector("[data-export-print]")?.addEventListener("click", () => {
+const waitForImages = () => {
+  const images = [...document.images];
+  return Promise.all(
+    images.map((image) => {
+      if (image.complete) return Promise.resolve();
+
+      return new Promise((resolve) => {
+        image.addEventListener("load", resolve, { once: true });
+        image.addEventListener("error", resolve, { once: true });
+      });
+    })
+  );
+};
+
+const waitForPrintAssets = async () => {
+  if (document.fonts?.ready) {
+    await document.fonts.ready;
+  }
+
+  await waitForImages();
+};
+
+document.querySelector("[data-export-print]")?.addEventListener("click", async () => {
   closeExportDialog();
-  window.print();
+  await waitForPrintAssets();
+  requestAnimationFrame(() => window.print());
 });
 
 exportDialog?.addEventListener("click", (event) => {

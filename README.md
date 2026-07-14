@@ -1,15 +1,16 @@
 # Radijator Premium Prezentacija
 
 Moderna staticka web prezentacija za kotlove, sredjena prema izvornoj prezentaciji
-`D:/MilanS/pozadina/Prezentacija 2026.pptx`.
+`D:/MilanS/pozadina/Prezentacija 2026.pptx` i dopunjena iz starijih Radijator
+prezentacija za razvoj, proizvodnju, digitalizaciju i BiomaxPRO.
 
 ## Struktura
 
-- `index.html` glavni deck sa 28 slajdova: uvod o firmi, razvojni blok i PPTX tok kotlova
+- `index.html` glavni deck sa 31 slajdom: uvod o firmi, razvojni blok, proizvodnja, digitalizacija i tok kotlova
 - `styles.css` prezentacioni katalog stil, levi dashboard, layout, responzivni prikaz
 - `i18n.js` visejezicni sloj za SR, EN, DE i SL verziju prezentacije
 - `main.js` blage animacije pri skrolu i pracenje aktivnog slajda u dashboardu
-- `assets/images/` slike, preseci, dijagrami i kontroleri izvuceni iz PPTX-a
+- `assets/images/` slike, preseci, dijagrami, proizvodnja, digitalizacija i kontroleri izvuceni iz prezentacija
 - `assets/videos/` story video snimci ubaceni na odgovarajuce proizvodne slajdove
 - `exports/radijator-prezentacija-2026-dokument.html` print-friendly pregledni dokument
 - `docs/priprema-za-podizanje.md` detaljan pregled provera i preporuka za objavu
@@ -31,32 +32,36 @@ klasicnih player kontrola:
 
 ## Trenutna verzija
 
-Aktivni deck je sveden na jedan izvor: `Prezentacija 2026.pptx`.
+Aktivni deck primarno prati `Prezentacija 2026.pptx`, uz ciljane dopune iz
+prezentacija `Radijator prezentacija 2019 za Masinski fax.pptx` i
+`Radijator prezentacija 2019 za Masinski fax Koki dodao kotlove.ppt`.
 
-U fajlu na toj putanji detektovana su 24 XML slajda. Web prezentacija sada ima
-uvod o firmi i razvojni blok pre tehnickog dela, a zatim prati PPTX tok kotlova
-bez direktor/kontakt prodajnih prosirenja:
+Web prezentacija sada ima uvod o firmi, razvojni blok, digitalnu proizvodnju i
+digitalizaciju pre tehnickog dela, a zatim prati tok kotlova bez
+direktor/kontakt prodajnih prosirenja:
 
 1. uvod o firmi, tradiciji i proizvodnji
 2. razvojni tok: PDM, ERP, CAM i put od zahteva do gotovog proizvoda
 3. SolidWorks PDM, kontrola revizija i utrosak sirovina
 4. dokumentacija, ispitivanje i elektro sektor
-5. podela kotlova na pelet
-6. EcoFlame i EcoFlame Plus
-7. automatika MB250
-8. TKAN 1/2 i TKAN industrijski
-9. EcoComfort i SY325 Basic
-10. nasipna lozista: UNI, Biolux, Cuba
-11. SY250, FenX
-12. K i FK serije sa presecima
-13. SY325 WOOD
-14. GREENY i TKAN MINI
+5. digitalna proizvodnja: Lantek, Cadman, SolidCAM i tok do gotovog proizvoda
+6. digitalizacija proizvoda: 4HEAT, touch paneli, programator i System Pro
+7. podela kotlova na pelet
+8. EcoFlame i EcoFlame Plus
+9. automatika MB250
+10. TKAN 1/2 i TKAN industrijski
+11. EcoComfort, SY325 Basic i BiomaxPRO
+12. nasipna lozista: UNI, Biolux, Cuba
+13. SY250, FenX
+14. K i FK serije sa presecima
+15. SY325 WOOD
+16. GREENY i TKAN MINI
 
 Dodatno su iz PPTX media foldera ubacene slike koje su falile u prethodnoj verziji:
 logo, `Since 1991`, dijagrami nacina dovoda peleta, UNI slike i pravi GREENY
 proizvod/presek.
-Iz prezentacije `Radijator prezentacija 2019 za Masinski fax.pptx` dodati su PDM,
-SolidWorks Composer, ispitna stanica i elektro sektor materijali za razvojni blok.
+Iz prezentacija iz 2019. dodati su PDM, SolidWorks Composer, ispitna stanica,
+elektro sektor, proizvodni procesi, digitalizacija proizvoda i BiomaxPRO.
 
 Deck se moze otvoriti direktno preko `index.html` bez posebnog servera.
 
@@ -78,7 +83,7 @@ Chrome zbog sigurnosnih pravila statickih stranica ne dozvoljava tiho cuvanje
 PDF-a bez sistemskog print dijaloga, niti dozvoljava da stranica sama prebaci
 Destination sa stampaca na `Save as PDF`. Zato je export tok: klik na `PDF
 export`, zatim `Otvori PDF export`, u Destination rucno izabrati `Save as PDF`,
-pa Save. Print CSS je podesen na 28 strana. Za video slajdove su dodate poster
+pa Save. Print CSS je podesen na 31 posebnu 16:9 PDF stranu. Za video slajdove su dodate poster
 slike u print modu, da PDF export ne ostane sa praznim ili crnim video poljima.
 
 ## Priprema za upload

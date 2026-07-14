@@ -1036,6 +1036,189 @@ h3 {
   line-height: 1.5;
 }
 
+.manufacturing-pipeline {
+  display: grid;
+  grid-template-columns: minmax(340px, 0.68fr) minmax(0, 1.32fr);
+  gap: clamp(28px, 4vw, 64px);
+  padding: clamp(96px, 7vw, 122px) clamp(28px, 4vw, 64px) 82px;
+}
+
+.pipeline-copy {
+  position: relative;
+  z-index: 2;
+  align-self: center;
+}
+
+.pipeline-copy h2 {
+  max-width: 720px;
+  margin-top: 22px;
+  color: var(--white);
+}
+
+.pipeline-copy p:not(.eyebrow) {
+  max-width: 640px;
+  margin-top: 24px;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: clamp(1rem, 1.1vw, 1.14rem);
+  font-weight: 700;
+}
+
+.pipeline-steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 34px;
+}
+
+.pipeline-steps article {
+  min-height: 132px;
+  padding: 18px;
+  border: 1px solid var(--line-dark);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 100% 0, rgba(217, 39, 34, 0.2), transparent 9rem),
+    rgba(255, 255, 255, 0.06);
+}
+
+.pipeline-steps span {
+  display: inline-grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 13px;
+  color: var(--white);
+  background: var(--red);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.18rem;
+  font-weight: 800;
+}
+
+.pipeline-steps strong {
+  display: block;
+  margin-top: 14px;
+  color: var(--white);
+  line-height: 1.15;
+}
+
+.pipeline-steps small {
+  display: block;
+  margin-top: 7px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.pipeline-visual {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  align-self: center;
+}
+
+.pipeline-visual img {
+  height: clamp(170px, 15vw, 248px);
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 26px;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+}
+
+.pipeline-visual img:nth-child(3) {
+  grid-row: span 2;
+  height: 100%;
+  min-height: clamp(354px, 31vw, 510px);
+}
+
+.digital-product {
+  display: grid;
+  grid-template-columns: minmax(340px, 0.58fr) minmax(0, 1.42fr);
+  gap: clamp(28px, 4vw, 62px);
+  padding: clamp(96px, 7vw, 122px) clamp(28px, 4vw, 64px) 82px;
+}
+
+.digital-copy {
+  position: relative;
+  z-index: 2;
+  align-self: center;
+}
+
+.digital-copy h2 {
+  max-width: 700px;
+  margin-top: 22px;
+}
+
+.digital-copy p:not(.eyebrow) {
+  max-width: 620px;
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.1vw, 1.14rem);
+  font-weight: 650;
+}
+
+.digital-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  align-content: center;
+}
+
+.digital-grid article {
+  overflow: hidden;
+  border: 1px solid rgba(23, 20, 18, 0.12);
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at 100% 0, rgba(217, 39, 34, 0.1), transparent 11rem),
+    rgba(255, 250, 241, 0.92);
+  box-shadow: var(--shadow-soft);
+}
+
+.digital-grid img {
+  height: clamp(170px, 17vw, 250px);
+  object-fit: contain;
+  padding: 24px;
+  background: linear-gradient(145deg, var(--white), #ebe3d7);
+}
+
+.digital-grid span {
+  display: block;
+  margin: 18px 20px 8px;
+  color: var(--red);
+  font-size: 0.64rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.digital-grid h3 {
+  margin: 0 20px;
+  font-size: clamp(1.24rem, 1.8vw, 1.76rem);
+}
+
+.digital-grid p {
+  margin: 10px 20px 20px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.sidefeed .product-visual {
+  background:
+    radial-gradient(circle at 50% 35%, rgba(217, 39, 34, 0.18), transparent 22rem),
+    linear-gradient(145deg, var(--white), #efe3d2);
+}
+
+.sidefeed .product-visual img {
+  max-height: 640px;
+  padding: 42px;
+}
+
 .systems,
 .model-family {
   padding: clamp(92px, 7vw, 118px) clamp(28px, 4vw, 64px) 78px;
@@ -1654,6 +1837,8 @@ h3 {
   .development-flow,
   .pdm-showcase,
   .validation-lab,
+  .manufacturing-pipeline,
+  .digital-product,
   .product-spread,
   .split-showcase,
   .brown-case,
@@ -1675,7 +1860,8 @@ h3 {
   }
 
   .flow-map,
-  .validation-grid {
+  .validation-grid,
+  .digital-grid {
     grid-row: auto;
     grid-column: auto;
   }
@@ -1689,6 +1875,9 @@ h3 {
   .family-grid,
   .family-grid.two,
   .flow-map,
+  .pipeline-visual,
+  .pipeline-steps,
+  .digital-grid,
   .quality-strip {
     grid-template-columns: 1fr 1fr;
   }
@@ -1737,6 +1926,8 @@ h3 {
   .development-flow,
   .pdm-showcase,
   .validation-lab,
+  .manufacturing-pipeline,
+  .digital-product,
   .systems,
   .product-spread,
   .showcase-copy,
@@ -1768,6 +1959,9 @@ h3 {
   .intro-stats,
   .capability-gallery,
   .flow-map,
+  .pipeline-visual,
+  .pipeline-steps,
+  .digital-grid,
   .validation-grid,
   .quality-strip,
   .spec-list div,
@@ -1779,10 +1973,13 @@ h3 {
   .family-grid img,
   .capability-gallery img,
   .capability-gallery img:first-child,
+  .pipeline-visual img,
+  .pipeline-visual img:nth-child(3),
   .pdm-visual img,
   .pdm-visual img:first-child,
   .pdm-visual img:last-child,
   .validation-grid img,
+  .digital-grid img,
   .kfk-gallery img,
   .kfk-gallery img:first-child {
     height: 260px;
@@ -1842,11 +2039,18 @@ h3 {
 }
 
 @page {
-  size: A4 landscape;
+  size: 297mm 167.0625mm;
   margin: 0;
 }
 
 @media print {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
   html,
   body {
     width: 297mm;
@@ -1855,6 +2059,10 @@ h3 {
     background: var(--white);
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
+  }
+
+  html {
+    scroll-snap-type: none;
   }
 
   body::before,
@@ -1871,8 +2079,9 @@ h3 {
     box-shadow: none;
   }
 
-  .deck-nav {
-    display: none;
+  .deck-nav,
+  .export-dialog {
+    display: none !important;
   }
 
   .reveal {
@@ -1882,11 +2091,11 @@ h3 {
   }
 
   video {
-    display: none;
+    display: none !important;
   }
 
   .print-poster {
-    display: block;
+    display: block !important;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1922,6 +2131,8 @@ h3 {
   .development-flow,
   .pdm-showcase,
   .validation-lab,
+  .manufacturing-pipeline,
+  .digital-product,
   .systems,
   .model-family,
   .product-spread,
@@ -1951,14 +2162,15 @@ h3 {
     height: 167.0625mm;
     min-height: 167.0625mm;
     max-height: 167.0625mm;
-    margin: 21.46875mm 0;
+    margin: 0;
     overflow: hidden;
+    page-break-inside: avoid;
+    break-inside: avoid;
     page-break-after: always;
     break-after: page;
   }
 
   .slide:last-child {
-    margin-bottom: 21.46875mm;
     page-break-after: auto;
     break-after: auto;
   }

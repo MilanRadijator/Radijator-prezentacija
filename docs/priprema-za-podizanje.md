@@ -1,15 +1,15 @@
 # Priprema za podizanje
 
-Datum pregleda: 2026-07-13
+Datum pregleda: 2026-07-14
 
 ## Status
 
 Prezentacija je spremna kao staticki web deck:
 
-- 28 slajdova
-- 28 stavki u levom dashboardu
+- 31 slajd
+- 31 stavka u levom dashboardu
 - 4 autoplay/muted/loop video snimka
-- 43 aktivne asset reference
+- 54 aktivne asset reference
 - 0 nedostajucih lokalnih fajlova
 - `dist/` paket napravljen za upload
 
@@ -23,8 +23,10 @@ Dodate su dve export opcije:
 Chrome ne dozvoljava statickoj stranici da tiho upise PDF fajl bez sistemskog
 print dijaloga, niti dozvoljava da stranica sama promeni Destination sa stampaca
 na `Save as PDF`. Ispravan tok je: klik na `PDF export`, zatim `Otvori PDF
-export`, Destination `Save as PDF`, pa Save. Za video slajdove su dodate
-`print-poster` slike, da PDF export ne prikazuje prazna/crna video polja.
+export`, Destination `Save as PDF`, Margins `None`, Scale `100`, pa Save. Za video slajdove su dodate
+`print-poster` slike, da PDF export ne prikazuje prazna/crna video polja. Print
+CSS koristi poseban 16:9 format strane, bez A4 margina koje mogu da poremete
+raspored.
 
 ## Ciscenje
 
@@ -35,11 +37,11 @@ Uradjeno:
 - `dist/` je dodat u `.gitignore`, jer je generisani build izlaz.
 - Rezervni/neaktivni asseti su dodati u `.gitignore`, tako da ostaju lokalno za dalje dizajnerske izmene, ali ne ulaze u commit.
 - Uklonjen je mrtav CSS za stare naslovne/cover varijante i neaktivni `automation-grid` layout.
+- Dodati su slajdovi za digitalnu proizvodnju, digitalizaciju proizvoda i BiomaxPRO.
 
 Velicine:
 
-- Izvorni `assets/`: 65 fajlova, oko 108.75 MB.
-- Release `dist/`: 50 fajlova, oko 94.11 MB.
+- Release `dist/`: 61 fajl, 54 aktivna asseta, oko 96.17 MB.
 
 Najvecu tezinu nose MP4 fajlovi:
 
@@ -60,7 +62,7 @@ Provereno:
 
 ## Preporuke pre javne objave
 
-- Rucno otvoriti `dist/index.html` i proci slajdove 01-28.
+- Rucno otvoriti `dist/index.html` i proci slajdove 01-31.
 - Testirati PDF export iz glavne prezentacije.
 - Testirati PDF export iz preglednog dokumenta.
 - Ako se zeli brze ucitavanje na slabijem internetu, sledeci korak je kompresija MP4 fajlova.
