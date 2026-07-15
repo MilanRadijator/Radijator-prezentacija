@@ -1,6 +1,6 @@
 # Priprema za podizanje
 
-Datum pregleda: 2026-07-14
+Datum pregleda: 2026-07-15
 
 ## Status
 
@@ -9,7 +9,7 @@ Prezentacija je spremna kao staticki web deck:
 - 31 slajd
 - 31 stavka u levom dashboardu
 - 4 autoplay/muted/loop video snimka
-- 54 aktivne asset reference
+- 48 aktivnih asseta
 - 0 nedostajucih lokalnih fajlova
 - `dist/` paket napravljen za upload
 
@@ -23,7 +23,7 @@ Dodate su dve export opcije:
 Chrome ne dozvoljava statickoj stranici da tiho upise PDF fajl bez sistemskog
 print dijaloga, niti dozvoljava da stranica sama promeni Destination sa stampaca
 na `Save as PDF`. Ispravan tok je: klik na `PDF export`, zatim `Otvori PDF
-export`, Destination `Save as PDF`, Margins `None`, Scale `100`, pa Save. Za video slajdove su dodate
+export`, Destination `Save as PDF`, Paper size `16 x 9 in` (`40,64 x 22,86 cm`) / `Custom` (ne A4), Margins `None`, Scale `100`, pa Save. Za video slajdove su dodate
 `print-poster` slike, da PDF export ne prikazuje prazna/crna video polja. Print
 CSS koristi poseban 16:9 format strane, bez A4 margina koje mogu da poremete
 raspored.
@@ -33,15 +33,24 @@ raspored.
 Uradjeno:
 
 - Napravljen `tools/build-release.js` za cist upload paket.
+- Build pre kopiranja automatski proverava redosled slajdova i dashboard linkova, duple ID-jeve, lokalne reference, CSS strukturu i video atribute.
 - Napravljen `dist/` sa samo aktivnim fajlovima i koriscenim assetima.
 - `dist/` je dodat u `.gitignore`, jer je generisani build izlaz.
 - Rezervni/neaktivni asseti su dodati u `.gitignore`, tako da ostaju lokalno za dalje dizajnerske izmene, ali ne ulaze u commit.
 - Uklonjen je mrtav CSS za stare naslovne/cover varijante i neaktivni `automation-grid` layout.
-- Dodati su slajdovi za digitalnu proizvodnju, digitalizaciju proizvoda i BiomaxPRO.
+- Dodat je fotografski slajd za razvojnu stanicu, laboratoriju, showroom i tehnicku zgradu.
+- Dodat je fotografski slajd za lasersko secenje, CNC savijanje, farbanje i rucno/robotsko zavarivanje.
+- Proizvodni blok je slozen po prodajnim grupama: drvo, piroliza, pelet, kombinovani kotlovi, kamini, industrija, elektro i baferi.
+- Svaki proizvod prati isti tok: karakteristike, zatim presek ili dodatni tehnicki detalji kada postoje.
+- Uklonjeni su zasebni slajdovi Tiemme/SY/MB kontrolera iz aktivne prezentacije.
+- Aktivni SR, EN, DE i SL prevodi objedinjeni su u jednom ociscenom `i18n.js` fajlu sa 274 aktivna kljuca po jeziku.
+- Karakteristike i preseci K, PK18, EcoFlame, EcoComfort, UNI, TKAN, Cuba, Biolux i FenX programa provereni su prema katalogu za 2024. godinu.
+- U pregledni dokument dodate su dve tabele sa potvrdjenim tehnickim podacima proizvoda.
+- Dodat je zavrsni slajd zahvalnosti sa optimizovanom fotografijom firme i prevodima na sva cetiri jezika.
 
 Velicine:
 
-- Release `dist/`: 61 fajl, 54 aktivna asseta, oko 96.17 MB.
+- Release `dist/`: 55 fajlova, 48 aktivnih asseta, oko 100.78 MB.
 
 Najvecu tezinu nose MP4 fajlovi:
 
@@ -56,7 +65,7 @@ Provereno:
 
 - Svi dashboard linkovi vode na postojece slajdove.
 - Svi lokalni `src`, `href` i `poster` asseti postoje.
-- `main.js` i `tools/build-release.js` prolaze `node --check`.
+- `main.js`, `i18n.js` i `tools/build-release.js` prolaze `node --check`.
 - Video elementi nemaju klasicne `controls` i svi imaju `autoplay muted loop`.
 - Novi fajlovi su ASCII konzistentni.
 

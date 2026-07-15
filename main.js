@@ -73,9 +73,10 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-const navLinks = [...document.querySelectorAll(".deck-nav a")];
+const navLinks = [...document.querySelectorAll(".nav-list a")];
 const navById = new Map(navLinks.map((link) => [link.getAttribute("href")?.slice(1), link]));
 const navList = document.querySelector(".nav-list");
+const slides = [...document.querySelectorAll(".slide")];
 
 const keepActiveNavItemVisible = (activeLink) => {
   if (!navList) return;
@@ -108,12 +109,22 @@ const slideObserver = new IntersectionObserver(
       activeLink.setAttribute("aria-current", "page");
       keepActiveNavItemVisible(activeLink);
     }
+
+    slides.forEach((slide) => {
+      slide.classList.toggle("is-current", slide === current.target);
+    });
+
+    const currentIndex = slides.indexOf(current.target);
+    if (currentIndex >= 0) {
+      const progress = ((currentIndex + 1) / slides.length) * 100;
+      document.documentElement.style.setProperty("--deck-progress", `${progress}%`);
+    }
   },
   {
     threshold: [0.36, 0.58, 0.78],
   }
 );
 
-document.querySelectorAll(".slide").forEach((slide) => {
+slides.forEach((slide) => {
   slideObserver.observe(slide);
 });

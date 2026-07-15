@@ -2,15 +2,17 @@
 
 Moderna staticka web prezentacija za kotlove, sredjena prema izvornoj prezentaciji
 `D:/MilanS/pozadina/Prezentacija 2026.pptx` i dopunjena iz starijih Radijator
-prezentacija za razvoj, proizvodnju, digitalizaciju i BiomaxPRO.
+prezentacija za razvoj, proizvodnju i digitalizaciju. Tehnicki podaci i aktivni
+preseci proizvoda provereni su prema katalogu
+`D:/MilanS/Katalog RADIJATOR 2024 SRB new 2.pdf`.
 
 ## Struktura
 
-- `index.html` glavni deck sa 31 slajdom: uvod o firmi, razvojni blok, proizvodnja, digitalizacija i tok kotlova
+- `index.html` glavni deck sa 31 slajdom: uvod o firmi, kapaciteti, razvojni prostori, proizvodni procesi, tok kotlova, akumulatori toplote i zavrsna zahvalnica
 - `styles.css` prezentacioni katalog stil, levi dashboard, layout, responzivni prikaz
-- `i18n.js` visejezicni sloj za SR, EN, DE i SL verziju prezentacije
+- `i18n.js` visejezicni sloj sa samo aktivnim SR, EN, DE i SL tekstovima prezentacije
 - `main.js` blage animacije pri skrolu i pracenje aktivnog slajda u dashboardu
-- `assets/images/` slike, preseci, dijagrami, proizvodnja, digitalizacija i kontroleri izvuceni iz prezentacija
+- `assets/images/` slike firme, proizvodnje, proizvoda i kataloski preseci
 - `assets/videos/` story video snimci ubaceni na odgovarajuce proizvodne slajdove
 - `exports/radijator-prezentacija-2026-dokument.html` print-friendly pregledni dokument
 - `docs/priprema-za-podizanje.md` detaljan pregled provera i preporuka za objavu
@@ -19,8 +21,8 @@ prezentacija za razvoj, proizvodnju, digitalizaciju i BiomaxPRO.
 Dodati su i novi brend elementi:
 
 - `assets/images/radijator-logo-transparent.png` transparentni Radijator logo za naslovnu i headere
-- `assets/images/bedz-35-godina.png` brend bedz, trenutno nije prikazan jer je naslovni slajd uklonjen
-- `assets/images/company-building-rex-0007.jpg` fotografija poslovnog objekta za uvod o firmi
+- `assets/images/bedz-35-godina.png` brend bedz prikazan na zavrsnom slajdu zahvalnosti
+- `assets/images/company-building-rex-0004.jpg` fotografija poslovnog objekta za uvod o firmi
 
 Video materijali su ubaceni kao autoplay/muted/loop ambijentalni paneli, bez
 klasicnih player kontrola:
@@ -32,36 +34,34 @@ klasicnih player kontrola:
 
 ## Trenutna verzija
 
-Aktivni deck primarno prati `Prezentacija 2026.pptx`, uz ciljane dopune iz
+Aktivni deck prati strukturu `Prezentacija 2026.pptx`, uz ciljane dopune iz
 prezentacija `Radijator prezentacija 2019 za Masinski fax.pptx` i
-`Radijator prezentacija 2019 za Masinski fax Koki dodao kotlove.ppt`.
+`Radijator prezentacija 2019 za Masinski fax Koki dodao kotlove.ppt`. Za K,
+PK18, EcoFlame, EcoComfort, UNI, TKAN, Cuba, Biolux, FenX, elektro kotlove i
+akumulatore toplote merodavan izvor je katalog za 2024. godinu.
 
-Web prezentacija sada ima uvod o firmi, razvojni blok, digitalnu proizvodnju i
-digitalizaciju pre tehnickog dela, a zatim prati tok kotlova bez
+Web prezentacija sada ima uvod o firmi, pregled kapaciteta, razvojnih prostora i proizvodnih procesa
+pre tehnickog dela, a zatim prati tok kotlova bez
 direktor/kontakt prodajnih prosirenja:
 
 1. uvod o firmi, tradiciji i proizvodnji
-2. razvojni tok: PDM, ERP, CAM i put od zahteva do gotovog proizvoda
-3. SolidWorks PDM, kontrola revizija i utrosak sirovina
-4. dokumentacija, ispitivanje i elektro sektor
-5. digitalna proizvodnja: Lantek, Cadman, SolidCAM i tok do gotovog proizvoda
-6. digitalizacija proizvoda: 4HEAT, touch paneli, programator i System Pro
-7. podela kotlova na pelet
-8. EcoFlame i EcoFlame Plus
-9. automatika MB250
-10. TKAN 1/2 i TKAN industrijski
-11. EcoComfort, SY325 Basic i BiomaxPRO
-12. nasipna lozista: UNI, Biolux, Cuba
-13. SY250, FenX
-14. K i FK serije sa presecima
-15. SY325 WOOD
-16. GREENY i TKAN MINI
+2. kapaciteti firme i digitalna osnova: lokacije, zaposleni, proizvodi, CNC, PDM, ERP i CAM
+3. razvojna stanica, laboratorija, showroom i tehnicka zgrada
+4. lasersko secenje, CNC savijanje, farbanje i rucno/robotsko zavarivanje
+5. K serija i PK18 piroliticki kotao, sa karakteristikama i presecima
+6. EcoFlame, EcoComfort i UNI, svaki kroz karakteristike i konstrukciju
+7. kombinovani kotlovi TKAN 1/2 i njihov presek
+8. kamini Cuba, Biolux i FenX, sa servisnim ili video detaljima
+9. industrijski TKAN osnovni i INTEGRA, sa konstrukcijom i presecima
+10. elektricni kotlovi EK Classic i EK Smart
+11. baferi kao zavrsni sistemski dodatak
+12. zavrsna zahvalnica Radijator tima preko brendirane fotografije firme
 
-Dodatno su iz PPTX media foldera ubacene slike koje su falile u prethodnoj verziji:
-logo, `Since 1991`, dijagrami nacina dovoda peleta, UNI slike i pravi GREENY
-proizvod/presek.
-Iz prezentacija iz 2019. dodati su PDM, SolidWorks Composer, ispitna stanica,
-elektro sektor, proizvodni procesi, digitalizacija proizvoda i BiomaxPRO.
+Dodatno su iz PPTX media foldera i izvornog materijala ubacene slike koje su
+falile za PK18, EK Classic, EK Smart i bafere. Preseci devet glavnih modelskih
+grupa zamenjeni su preciznim kataloskim ilustracijama. Stari zasebni slajdovi
+kontrolera uklonjeni su iz aktivnog toka, dok novi fotografski blokovi prikazuju
+razvojne prostore i kljucne procese proizvodnje.
 
 Deck se moze otvoriti direktno preko `index.html` bez posebnog servera.
 
@@ -83,7 +83,7 @@ Chrome zbog sigurnosnih pravila statickih stranica ne dozvoljava tiho cuvanje
 PDF-a bez sistemskog print dijaloga, niti dozvoljava da stranica sama prebaci
 Destination sa stampaca na `Save as PDF`. Zato je export tok: klik na `PDF
 export`, zatim `Otvori PDF export`, u Destination rucno izabrati `Save as PDF`,
-pa Save. Print CSS je podesen na 31 posebnu 16:9 PDF stranu. Za video slajdove su dodate poster
+zadrzati `16 x 9 in` (`40,64 x 22,86 cm`) / `Custom` format (ne A4), pa Save. Print CSS je podesen na 31 posebnu 16:9 PDF stranu. Za video slajdove su dodate poster
 slike u print modu, da PDF export ne ostane sa praznim ili crnim video poljima.
 
 ## Priprema za upload
