@@ -8,7 +8,7 @@ preseci proizvoda provereni su prema katalogu
 
 ## Struktura
 
-- `index.html` glavni deck sa 32 slajda: uvod o firmi, kapaciteti, razvojni prostori, proizvodni procesi, tok kotlova, akumulatori toplote i zavrsna zahvalnica
+- `index.html` glavni deck sa 34 slajda: uvod o firmi, kapaciteti, razvojni prostori, proizvodni procesi, tok kotlova, akumulatori toplote i zavrsna zahvalnica
 - `styles.css` prezentacioni katalog stil, levi dashboard, layout, responzivni prikaz
 - `i18n.js` visejezicni sloj sa samo aktivnim SR, EN, DE i SL tekstovima prezentacije
 - `main.js` blage animacije pri skrolu i pracenje aktivnog slajda u dashboardu
@@ -48,7 +48,7 @@ direktor/kontakt prodajnih prosirenja:
 1. uvod o firmi, tradiciji i proizvodnji
 2. kapaciteti firme i digitalna osnova: lokacije, zaposleni, proizvodi, CNC, PDM, ERP i CAM
 3. razvojna stanica, laboratorija, showroom i tehnicka zgrada
-4. lasersko secenje, CNC savijanje, farbanje i rucno/robotsko zavarivanje
+4. tri odvojena proizvodna slajda: lasersko secenje, CNC savijanje i zavarivanje
 5. K serija i PK18 piroliticki kotao, sa karakteristikama i presecima
 6. EcoFlame, EcoFlame Plus, EcoComfort i UNI, kroz karakteristike i konstrukciju
 7. kombinovani kotlovi TKAN 1/2 i njihov presek
@@ -84,7 +84,7 @@ Chrome zbog sigurnosnih pravila statickih stranica ne dozvoljava tiho cuvanje
 PDF-a bez sistemskog print dijaloga, niti dozvoljava da stranica sama prebaci
 Destination sa stampaca na `Save as PDF`. Zato je export tok: klik na `PDF
 export`, zatim `Otvori PDF export`, u Destination rucno izabrati `Save as PDF`,
-zadrzati `16 x 9 in` (`40,64 x 22,86 cm`) / `Custom` format (ne A4), pa Save. Print CSS je podesen na 32 posebne 16:9 PDF strane. Za video slajdove su dodate poster
+zadrzati `16 x 9 in` (`40,64 x 22,86 cm`) / `Custom` format (ne A4), pa Save. Print CSS je podesen na 34 posebne 16:9 PDF strane. Za video slajdove su dodate poster
 slike u print modu, da PDF export ne ostane sa praznim ili crnim video poljima.
 
 ## Priprema za upload

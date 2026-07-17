@@ -19,7 +19,7 @@
   --dashboard-width: clamp(260px, 15vw, 310px);
   --stage-gap: clamp(12px, 1vw, 18px);
   --slide-height: calc(100vh - (var(--stage-gap) * 2));
-  --deck-progress: 3.125%;
+  --deck-progress: 2.941%;
 }
 
 * {
@@ -1150,6 +1150,30 @@ h3 {
 .process-photo-grid .process-card:nth-child(6) {
   grid-column: 9 / 13;
   grid-row: 7 / 13;
+}
+
+.production-detail .process-photo-grid {
+  grid-template-rows: repeat(10, minmax(0, 1fr));
+}
+
+.production-detail .process-photo-grid .process-card:nth-child(1) {
+  grid-column: 1 / 8;
+  grid-row: 1 / 6;
+}
+
+.production-detail .process-photo-grid .process-card:nth-child(2) {
+  grid-column: 8 / 13;
+  grid-row: 1 / 5;
+}
+
+.production-detail .process-photo-grid .process-card:nth-child(3) {
+  grid-column: 1 / 6;
+  grid-row: 6 / 11;
+}
+
+.production-detail .process-photo-grid .process-card:nth-child(4) {
+  grid-column: 6 / 13;
+  grid-row: 5 / 11;
 }
 
 .process-card::after {
