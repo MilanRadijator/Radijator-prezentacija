@@ -6,10 +6,10 @@ Datum pregleda: 2026-07-15
 
 Prezentacija je spremna kao staticki web deck:
 
-- 31 slajd
-- 31 stavka u levom dashboardu
+- 32 slajda
+- 32 stavke u levom dashboardu
 - 4 autoplay/muted/loop video snimka
-- 48 aktivnih asseta
+- 49 aktivnih asseta
 - 0 nedostajucih lokalnih fajlova
 - `dist/` paket napravljen za upload
 
@@ -43,14 +43,14 @@ Uradjeno:
 - Proizvodni blok je slozen po prodajnim grupama: drvo, piroliza, pelet, kombinovani kotlovi, kamini, industrija, elektro i baferi.
 - Svaki proizvod prati isti tok: karakteristike, zatim presek ili dodatni tehnicki detalji kada postoje.
 - Uklonjeni su zasebni slajdovi Tiemme/SY/MB kontrolera iz aktivne prezentacije.
-- Aktivni SR, EN, DE i SL prevodi objedinjeni su u jednom ociscenom `i18n.js` fajlu sa 274 aktivna kljuca po jeziku.
-- Karakteristike i preseci K, PK18, EcoFlame, EcoComfort, UNI, TKAN, Cuba, Biolux i FenX programa provereni su prema katalogu za 2024. godinu.
+- Aktivni SR, EN, DE i SL prevodi objedinjeni su u jednom ociscenom `i18n.js` fajlu sa 305 aktivnih kljuceva po jeziku.
+- Karakteristike i preseci K, PK18, EcoFlame, EcoFlame Plus, EcoComfort, UNI, TKAN, Cuba, Biolux i FenX programa provereni su prema katalogu za 2024. godinu i dostavljenom proizvodnom materijalu.
 - U pregledni dokument dodate su dve tabele sa potvrdjenim tehnickim podacima proizvoda.
 - Dodat je zavrsni slajd zahvalnosti sa optimizovanom fotografijom firme i prevodima na sva cetiri jezika.
 
 Velicine:
 
-- Release `dist/`: 55 fajlova, 48 aktivnih asseta, oko 100.78 MB.
+- Release `dist/`: 56 fajlova, 49 aktivnih asseta, oko 101.53 MB.
 
 Najvecu tezinu nose MP4 fajlovi:
 
@@ -71,7 +71,7 @@ Provereno:
 
 ## Preporuke pre javne objave
 
-- Rucno otvoriti `dist/index.html` i proci slajdove 01-31.
+- Rucno otvoriti `dist/index.html` i proci slajdove 01-32.
 - Testirati PDF export iz glavne prezentacije.
 - Testirati PDF export iz preglednog dokumenta.
 - Ako se zeli brze ucitavanje na slabijem internetu, sledeci korak je kompresija MP4 fajlova.

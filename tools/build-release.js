@@ -86,7 +86,10 @@ const collectAssetRefs = () => {
 const validateSources = () => {
   const html = fs.readFileSync(path.join(root, "index.html"), "utf8");
   const css = fs.readFileSync(path.join(root, "styles.css"), "utf8");
-  const expectedSlides = Array.from({ length: 31 }, (_, index) => `s${String(index + 1).padStart(2, "0")}`);
+  const expectedSlideCount = 32;
+  const expectedSlides = Array.from({ length: expectedSlideCount }, (_, index) =>
+    `s${String(index + 1).padStart(2, "0")}`
+  );
   const slideIds = [...html.matchAll(/<section\b[^>]*class="[^"]*\bslide\b[^"]*"[^>]*id="(s\d{2})"/g)].map(
     (match) => match[1]
   );
@@ -98,7 +101,10 @@ const validateSources = () => {
   const images = [...html.matchAll(/<img\b[^>]*>/g)].map((match) => match[0]);
   const printPosters = [...html.matchAll(/<img\b[^>]*class="[^"]*\bprint-poster\b[^"]*"[^>]*>/g)];
 
-  assert(JSON.stringify(slideIds) === JSON.stringify(expectedSlides), "slide IDs must run from s01 to s31");
+  assert(
+    JSON.stringify(slideIds) === JSON.stringify(expectedSlides),
+    `slide IDs must run from s01 to s${expectedSlideCount}`
+  );
   assert(JSON.stringify(navIds) === JSON.stringify(expectedSlides), "dashboard links must match slide order");
   assert(duplicateIds.length === 0, `duplicate HTML IDs: ${[...new Set(duplicateIds)].join(", ")}`);
   assert((css.match(/{/g) || []).length === (css.match(/}/g) || []).length, "unbalanced CSS braces");

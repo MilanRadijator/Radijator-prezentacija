@@ -19,7 +19,7 @@
   --dashboard-width: clamp(260px, 15vw, 310px);
   --stage-gap: clamp(12px, 1vw, 18px);
   --slide-height: calc(100vh - (var(--stage-gap) * 2));
-  --deck-progress: 3.226%;
+  --deck-progress: 3.125%;
 }
 
 * {
@@ -1378,6 +1378,55 @@ h3 {
   line-height: 1.45;
 }
 
+.spec-list-k {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.spec-list-k div {
+  display: block;
+  padding: 12px 16px;
+}
+
+.spec-list-k div:nth-child(even) {
+  border-right: 1px solid var(--line);
+}
+
+.spec-list-k div:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+
+.spec-list-k .model-masses {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 0.2fr 0.8fr;
+  align-items: center;
+  gap: 18px;
+  padding: 14px 18px;
+}
+
+.spec-list-k span {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.spec-list-k .model-masses span {
+  margin-bottom: 0;
+}
+
+.spec-list-k strong {
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.spec-list-compact div {
+  padding: 12px 18px;
+}
+
+.spec-list-compact strong {
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
 .caption-strip {
   position: relative;
   z-index: 2;
@@ -1778,6 +1827,27 @@ h3 {
 .quality-strip,
 .spec-list div {
     grid-template-columns: 1fr;
+  }
+
+  .spec-list-k {
+    grid-template-columns: 1fr;
+  }
+
+  .spec-list-k .model-masses {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .spec-list-k div:nth-child(even) {
+    border-right: 0;
+  }
+
+  .spec-list-k div:nth-last-child(-n + 2) {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .spec-list-k div:last-child {
+    border-bottom: 0;
   }
 
   .facility-grid,
