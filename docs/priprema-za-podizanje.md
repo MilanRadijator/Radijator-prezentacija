@@ -1,15 +1,15 @@
 # Priprema za podizanje
 
-Datum pregleda: 2026-07-15
+Datum pregleda: 2026-07-17
 
 ## Status
 
 Prezentacija je spremna kao staticki web deck:
 
-- 34 slajda
-- 34 stavke u levom dashboardu
+- 37 slajda
+- 37 stavke u levom dashboardu
 - 4 autoplay/muted/loop video snimka
-- 54 aktivna asseta
+- 62 aktivnih asseta
 - 0 nedostajucih lokalnih fajlova
 - `dist/` paket napravljen za upload
 
@@ -39,18 +39,18 @@ Uradjeno:
 - Rezervni/neaktivni asseti su dodati u `.gitignore`, tako da ostaju lokalno za dalje dizajnerske izmene, ali ne ulaze u commit.
 - Uklonjen je mrtav CSS za stare naslovne/cover varijante i neaktivni `automation-grid` layout.
 - Dodat je fotografski slajd za razvojnu stanicu, laboratoriju, showroom i tehnicku zgradu.
-- Slajd procesa proizvodnje razdvojen je na tri odvojena fotografska slajda: secenje, savijanje i zavarivanje.
+- Slajd procesa proizvodnje razdvojen je na cetiri fotografska slajda: secenje, savijanje, zavarivanje i ostali procesi rada.
 - Proizvodni blok je slozen po prodajnim grupama: drvo, piroliza, pelet, kombinovani kotlovi, kamini, industrija, elektro i baferi.
 - Svaki proizvod prati isti tok: karakteristike, zatim presek ili dodatni tehnicki detalji kada postoje.
 - Uklonjeni su zasebni slajdovi Tiemme/SY/MB kontrolera iz aktivne prezentacije.
-- Aktivni SR, EN, DE i SL prevodi objedinjeni su u jednom ociscenom `i18n.js` fajlu sa 331 aktivnim kljucem po jeziku.
-- Karakteristike i preseci K, PK18, EcoFlame, EcoFlame Plus, EcoComfort, UNI, TKAN, Cuba, Biolux i FenX programa provereni su prema katalogu za 2024. godinu i dostavljenom proizvodnom materijalu.
+- Aktivni SR, EN, DE i SL prevodi objedinjeni su u jednom ociscenom `i18n.js` fajlu sa 358 aktivnih kljuceva po jeziku.
+- Karakteristike i preseci K, PK18, EcoFlame, EcoFlame Plus, EcoComfort, UNI, TKAN, TKAN MINI, Cuba, Biolux, GreenSlim i FenX programa provereni su prema katalogu za 2024. godinu i dostavljenom proizvodnom materijalu gde je materijal bio dostupan.
 - U pregledni dokument dodate su dve tabele sa potvrdjenim tehnickim podacima proizvoda.
 - Dodat je zavrsni slajd zahvalnosti sa optimizovanom fotografijom firme i prevodima na sva cetiri jezika.
 
 Velicine:
 
-- Release `dist/`: 61 fajl, 54 aktivna asseta, oko 101.92 MB.
+- Release `dist/`: 69 fajlova, 62 aktivnih asseta, oko 103.48 MB.
 
 Najvecu tezinu nose MP4 fajlovi:
 
@@ -71,7 +71,7 @@ Provereno:
 
 ## Preporuke pre javne objave
 
-- Rucno otvoriti `dist/index.html` i proci slajdove 01-34.
+- Rucno otvoriti `dist/index.html` i proci slajdove 01-37.
 - Testirati PDF export iz glavne prezentacije.
 - Testirati PDF export iz preglednog dokumenta.
 - Ako se zeli brze ucitavanje na slabijem internetu, sledeci korak je kompresija MP4 fajlova.

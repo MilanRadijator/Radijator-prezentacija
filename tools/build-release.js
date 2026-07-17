@@ -86,7 +86,7 @@ const collectAssetRefs = () => {
 const validateSources = () => {
   const html = fs.readFileSync(path.join(root, "index.html"), "utf8");
   const css = fs.readFileSync(path.join(root, "styles.css"), "utf8");
-  const expectedSlideCount = 34;
+  const expectedSlideCount = 37;
   const expectedSlides = Array.from({ length: expectedSlideCount }, (_, index) =>
     `s${String(index + 1).padStart(2, "0")}`
   );

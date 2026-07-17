@@ -8,7 +8,7 @@ preseci proizvoda provereni su prema katalogu
 
 ## Struktura
 
-- `index.html` glavni deck sa 34 slajda: uvod o firmi, kapaciteti, razvojni prostori, proizvodni procesi, tok kotlova, akumulatori toplote i zavrsna zahvalnica
+- `index.html` glavni deck sa 37 slajda: uvod o firmi, kapaciteti, razvojni prostori, proizvodni procesi, tok kotlova, akumulatori toplote i zavrsna zahvalnica
 - `styles.css` prezentacioni katalog stil, levi dashboard, layout, responzivni prikaz
 - `i18n.js` visejezicni sloj sa samo aktivnim SR, EN, DE i SL tekstovima prezentacije
 - `main.js` blage animacije pri skrolu i pracenje aktivnog slajda u dashboardu
@@ -38,7 +38,7 @@ klasicnih player kontrola:
 Aktivni deck prati strukturu `Prezentacija 2026.pptx`, uz ciljane dopune iz
 prezentacija `Radijator prezentacija 2019 za Masinski fax.pptx` i
 `Radijator prezentacija 2019 za Masinski fax Koki dodao kotlove.ppt`. Za K,
-PK18, EcoFlame, EcoFlame Plus, EcoComfort, UNI, TKAN, Cuba, Biolux, FenX, elektro kotlove i
+PK18, EcoFlame, EcoFlame Plus, EcoComfort, UNI, TKAN, TKAN MINI, Cuba, Biolux, GreenSlim, FenX, elektro kotlove i
 akumulatore toplote merodavan izvor je katalog za 2024. godinu.
 
 Web prezentacija sada ima uvod o firmi, pregled kapaciteta, razvojnih prostora i proizvodnih procesa
@@ -48,11 +48,11 @@ direktor/kontakt prodajnih prosirenja:
 1. uvod o firmi, tradiciji i proizvodnji
 2. kapaciteti firme i digitalna osnova: lokacije, zaposleni, proizvodi, CNC, PDM, ERP i CAM
 3. razvojna stanica, laboratorija, showroom i tehnicka zgrada
-4. tri odvojena proizvodna slajda: lasersko secenje, CNC savijanje i zavarivanje
+4. cetiri proizvodna slajda: lasersko secenje, CNC savijanje, zavarivanje sudova pod pritiskom i ostali procesi rada
 5. K serija i PK18 piroliticki kotao, sa karakteristikama i presecima
 6. EcoFlame, EcoFlame Plus, EcoComfort i UNI, kroz karakteristike i konstrukciju
-7. kombinovani kotlovi TKAN 1/2 i njihov presek
-8. kamini Cuba, Biolux i FenX, sa servisnim ili video detaljima
+7. kombinovani kotlovi TKAN 1/2, TKAN MINI i njihovi preseci/detalji
+8. kamini Cuba, Biolux, GreenSlim i FenX, sa servisnim ili video detaljima
 9. industrijski TKAN osnovni i INTEGRA, sa konstrukcijom i presecima
 10. elektricni kotlovi EK Classic i EK Smart
 11. baferi kao zavrsni sistemski dodatak
@@ -84,7 +84,7 @@ Chrome zbog sigurnosnih pravila statickih stranica ne dozvoljava tiho cuvanje
 PDF-a bez sistemskog print dijaloga, niti dozvoljava da stranica sama prebaci
 Destination sa stampaca na `Save as PDF`. Zato je export tok: klik na `PDF
 export`, zatim `Otvori PDF export`, u Destination rucno izabrati `Save as PDF`,
-zadrzati `16 x 9 in` (`40,64 x 22,86 cm`) / `Custom` format (ne A4), pa Save. Print CSS je podesen na 34 posebne 16:9 PDF strane. Za video slajdove su dodate poster
+zadrzati `16 x 9 in` (`40,64 x 22,86 cm`) / `Custom` format (ne A4), pa Save. Print CSS je podesen na 37 posebne 16:9 PDF strane. Za video slajdove su dodate poster
 slike u print modu, da PDF export ne ostane sa praznim ili crnim video poljima.
 
 ## Priprema za upload

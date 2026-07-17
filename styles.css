@@ -19,7 +19,7 @@
   --dashboard-width: clamp(260px, 15vw, 310px);
   --stage-gap: clamp(12px, 1vw, 18px);
   --slide-height: calc(100vh - (var(--stage-gap) * 2));
-  --deck-progress: 2.941%;
+  --deck-progress: 2.703%;
 }
 
 * {
